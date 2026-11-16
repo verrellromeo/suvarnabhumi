@@ -1,65 +1,35 @@
-# Suvarnabhumi Website — Rencana Fitur
+# Suvarnabhumi Website — Fitur & Struktur
 
 ## Arah website
 
-Website ini menjadi atlas digital dan pusat referensi untuk dunia Suvarnabhumi: pengunjung bisa menelusuri pembagian wilayah, kota-kota besar, dan sejarah konsesi Eropa. Konten ditampilkan sebagai halaman dan eksplorasi interaktif, bukan sekadar kumpulan CSV.
+Atlas digital Suvarnabhumi dengan peta sebagai beranda. Peta batas kanon dimulai kosong; halaman lain tetap memuat direktori wilayah, kota, tokoh, sejarah terpilih, dan enklave.
 
-## Fitur rilis pertama
+## Navigasi utama
 
-1. **Beranda peta**
-   - Peta dunia menjadi tampilan utama saat website dibuka.
-   - Kontrol untuk memilih tingkat administrasi ADM0, ADM1, ADM2, atau ADM3.
-   - Pilihan pengelompokan warna berdasarkan Mandala atau Cakravala.
-   - Untuk saat ini peta hanya menampilkan basemap; batas wilayah Suvarnabhumi belum dimuat.
-   - Pengguna dapat menggeser dan memperbesar peta, lalu membuka Polygon Studio untuk menyiapkan geometri.
+- **Peta** — tampilan dunia sebagai landing page, basemap dapat digeser/diperbesar, pilihan ADM0–ADM3, dan batas kanon Suvarnabhumi kosong sampai geometri siap.
+- **Wilayah** — hierarki, indeks Mandala/Cakravala, dan ringkasan kawasan.
+- **Kota** — profil urban dengan karakter tempat, sejarah, arsitektur, dan demografi bila sumbernya tersedia.
+- **Sejarah** — garis waktu milestone kanon yang bertanggal.
+- **Tokoh** — profil penguasa, pemimpin, dan tokoh historis dengan peran serta peristiwa yang tercatat.
+- **Enklave** — profil bekas konsesi Eropa, identitas kota, dan pengembalian kedaulatan 1749.
+- **Sumber** — provenance, metodologi, status data, dan catatan kanon.
 
-2. **Atlas wilayah**
-   - Jelajahi struktur wilayah melalui Cakravala, Mandala, negara, dan tingkat administrasi ADM0–ADM3.
-   - Cari nama wilayah dan saring berdasarkan tingkat administrasi setelah data batas tersedia.
-   - Halaman ringkas untuk melihat wilayah mana yang termasuk dalam suatu Mandala atau Cakravala.
-   - Bedakan basemap geografis umum dari batas wilayah dan pengelompokan kanon Suvarnabhumi.
+## Data yang tersedia dalam proyek
 
-3. **Atlas 50 kota**
-   - Daftar kota yang dapat dicari, diurutkan, dan disaring menurut Mandala, populasi, atau karakter kota.
-   - Profil tiap kota menampilkan estimasi populasi metro, luas dan kepadatan, wilayah pembentuk metro, sejarah, bentuk kota, arsitektur, ekonomi, demografi, dan bahasa.
-   - Penanda yang jelas untuk nilai perkiraan beserta catatan dasar estimasinya.
+- Hierarki wilayah: 17 Mandala, 248 Cakravala, 150 negara, dan 18.192 entri administratif menurut inventaris proyek.
+- Tabel Top 50 kota dan demografi.
+- Kanon 10 enklave Eropa pada 1749.
+- Memori proyek berisi profil dan catatan kota, kawasan, serta beberapa milestone sejarah.
+- Berkas `suvarnabhumi_history.csv` menyimpan hierarki wilayah, bukan daftar peristiwa bertanggal.
 
-4. **Distrik Warisan Barat**
-   - Profil untuk 10 bekas enklave/konsesi Eropa, termasuk asal-usul dan identitas warisannya.
-   - Garis waktu konsesi dan perubahan status hingga pengembalian kedaulatan pada 1749.
-   - Penjelasan aturan kebijakan dan status distrik setelah 1749.
-   - Catatan populasi dan komposisi identitas modern jika tersedia di data.
+## Batas kanon yang perlu dijaga
 
-5. **Pencarian lintas situs**
-   - Satu kotak pencarian untuk menemukan Mandala, Cakravala, negara, wilayah administratif, kota, atau enklave.
-   - Hasil pencarian mengarahkan ke profil terkait, bukan hanya menampilkan baris data.
+- Bedakan kawasan ibu kota Malaya Islands Capital Region dari Srivijaya Special Administrative Region.
+- Bedakan tahun pendirian kota, penaklukan wilayah, kesetiaan politik, dan pengembalian kedaulatan.
+- Jangan mengisi tahun pendirian atau biografi tokoh yang belum dikonfirmasi.
+- Hubungan Cakravala dengan jenjang tradisional Kadipatra, Viṣaya, Thāna, dan Kampong masih memerlukan pencocokan.
+- Basemap umum bukan batas politik Suvarnabhumi. Overlay wilayah harus memakai geometri yang sesuai dengan data kanon.
 
-6. **Sumber, metode, dan catatan kanon**
-   - Tampilkan sumber data, batas wilayah, logika penghitungan, serta catatan kanon yang relevan.
-   - Bedakan informasi kanon, estimasi, dan interpretasi.
-   - Sediakan halaman “Tentang data” agar angka dan pembagian wilayah tidak terlihat seolah-olah semuanya pasti atau hasil pengukuran resmi.
+## Status implementasi
 
-7. **Navigasi responsif**
-   - Nyaman dipakai di ponsel maupun desktop.
-   - Menu utama yang konsisten: Peta, Atlas, Kota, Distrik Warisan Barat, Tentang.
-   - URL profil yang bisa dibagikan langsung.
-
-## Fitur tahap berikutnya
-
-- **Lapisan batas wilayah:** hubungkan geometri ADM0–ADM3 yang sesuai, warnai berdasarkan Mandala atau Cakravala, dan buka ringkasan wilayah saat poligon dipilih.
-- **Timeline sejarah Suvarnabhumi:** peristiwa politik dan perubahan wilayah dari masa ke masa. Memerlukan dataset kronologi karena file bernama `suvarnabhumi_history.csv` yang tersedia saat ini berisi hierarki wilayah, bukan daftar peristiwa bertanggal.
-- **Perbandingan kota/wilayah:** bandingkan populasi, kepadatan, demografi, bahasa, dan ekonomi dengan catatan metode yang sama.
-- **Versi Bahasa Indonesia dan Inggris:** sediakan pilihan bahasa setelah struktur konten utama stabil.
-- **Jelajah tematik:** tur singkat, misalnya “kota terbesar”, “wilayah lintas negara”, atau “bekas konsesi Eropa”.
-
-## Batas data yang perlu dijaga
-
-Berkas saat ini mencakup 18.192 entri wilayah administratif (248 nilai Cakravala, 17 Mandala, dan 150 negara), tabel 50 kota, serta 10 entri enklave ditambah catatan kebijakan dan konteks. Dataset yang tersedia belum menyertakan geometri batas untuk menggambar wilayah kanon secara akurat. Karena itu beranda memakai basemap umum dan membiarkan lapisan Suvarnabhumi kosong sampai data geometri batas siap.
-
-## Urutan pengerjaan yang disarankan
-
-1. Siapkan kerangka halaman dan gaya visual.
-2. Bangun beranda peta dan hubungkan data wilayah.
-3. Bangun Atlas wilayah, Atlas 50 kota, dan Distrik Warisan Barat.
-4. Tambahkan pencarian, tautan profil, serta tampilan ponsel.
-5. Rapikan sumber, metode, dan label estimasi.
+Beranda peta dan halaman Wilayah, Kota, Sejarah, Tokoh, Enklave, serta Sumber sudah tersedia sebagai fitur dasar. Konten awal memakai catatan kanon yang telah dibahas; angka demografi dan seluruh baris CSV harus tetap ditampilkan setelah pemetaan kolom dan impor sumber selesai. Peta saat ini memakai basemap umum tanpa overlay batas Suvarnabhumi.
