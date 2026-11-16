@@ -6,17 +6,18 @@ Website ini menjadi atlas digital dan pusat referensi untuk dunia Suvarnabhumi: 
 
 ## Fitur rilis pertama
 
-1. **Beranda**
-   - Pengenalan singkat tentang Suvarnabhumi.
-   - Angka utama sebagai pintu masuk: 17 mandala, 150 negara, dan 50 kota utama.
-   - Kartu menuju Atlas, Kota, serta Distrik Warisan Barat.
-   - Wilayah atau kota pilihan yang berganti secara editorial.
+1. **Beranda peta**
+   - Peta dunia menjadi tampilan utama saat website dibuka.
+   - Kontrol untuk memilih tingkat administrasi ADM0, ADM1, ADM2, atau ADM3.
+   - Pilihan pengelompokan warna berdasarkan Mandala atau Cakravala.
+   - Untuk saat ini peta hanya menampilkan basemap; batas wilayah Suvarnabhumi belum dimuat.
+   - Pengguna dapat menggeser dan memperbesar peta, lalu membuka Polygon Studio untuk menyiapkan geometri.
 
 2. **Atlas wilayah**
-   - Jelajahi struktur wilayah melalui Cakravala, Mandala, negara, ADM Level 1, dan ADM Level 2.
-   - Cari nama wilayah dan saring berdasarkan tingkat administrasi.
+   - Jelajahi struktur wilayah melalui Cakravala, Mandala, negara, dan tingkat administrasi ADM0–ADM3.
+   - Cari nama wilayah dan saring berdasarkan tingkat administrasi setelah data batas tersedia.
    - Halaman ringkas untuk melihat wilayah mana yang termasuk dalam suatu Mandala atau Cakravala.
-   - Pada rilis pertama, gunakan daftar dan kartu wilayah yang akurat. Peta batas geografis penuh menyusul setelah data geometri wilayah tersedia.
+   - Bedakan basemap geografis umum dari batas wilayah dan pengelompokan kanon Suvarnabhumi.
 
 3. **Atlas 50 kota**
    - Daftar kota yang dapat dicari, diurutkan, dan disaring menurut Mandala, populasi, atau karakter kota.
@@ -40,25 +41,25 @@ Website ini menjadi atlas digital dan pusat referensi untuk dunia Suvarnabhumi: 
 
 7. **Navigasi responsif**
    - Nyaman dipakai di ponsel maupun desktop.
-   - Menu utama yang konsisten: Beranda, Atlas, Kota, Distrik Warisan Barat, Tentang.
+   - Menu utama yang konsisten: Peta, Atlas, Kota, Distrik Warisan Barat, Tentang.
    - URL profil yang bisa dibagikan langsung.
 
 ## Fitur tahap berikutnya
 
-- **Peta interaktif penuh:** warna per Mandala/Cakravala, pilihan lapisan, zoom, serta klik wilayah untuk membuka profil. Memerlukan GeoJSON atau data batas wilayah yang cocok dengan daftar ADM.
+- **Lapisan batas wilayah:** hubungkan geometri ADM0–ADM3 yang sesuai, warnai berdasarkan Mandala atau Cakravala, dan buka ringkasan wilayah saat poligon dipilih.
 - **Timeline sejarah Suvarnabhumi:** peristiwa politik dan perubahan wilayah dari masa ke masa. Memerlukan dataset kronologi karena file bernama `suvarnabhumi_history.csv` yang tersedia saat ini berisi hierarki wilayah, bukan daftar peristiwa bertanggal.
 - **Perbandingan kota/wilayah:** bandingkan populasi, kepadatan, demografi, bahasa, dan ekonomi dengan catatan metode yang sama.
-- **Versi Bahasa Indonesia:** tambahkan pilihan bahasa setelah struktur konten utama stabil.
+- **Versi Bahasa Indonesia dan Inggris:** sediakan pilihan bahasa setelah struktur konten utama stabil.
 - **Jelajah tematik:** tur singkat, misalnya “kota terbesar”, “wilayah lintas negara”, atau “bekas konsesi Eropa”.
 
 ## Batas data yang perlu dijaga
 
-Berkas saat ini mencakup 18.192 entri wilayah administratif (248 nilai Cakravala, 17 Mandala, dan 150 negara), tabel 50 kota, serta 10 entri enklave ditambah catatan kebijakan dan konteks. Dataset yang tersedia belum menyertakan geometri batas untuk menggambar peta akurat. Karena itu rilis pertama sebaiknya mengutamakan direktori wilayah dan profil berbasis data; peta penuh dan timeline umum masuk tahap berikutnya.
+Berkas saat ini mencakup 18.192 entri wilayah administratif (248 nilai Cakravala, 17 Mandala, dan 150 negara), tabel 50 kota, serta 10 entri enklave ditambah catatan kebijakan dan konteks. Dataset yang tersedia belum menyertakan geometri batas untuk menggambar wilayah kanon secara akurat. Karena itu beranda memakai basemap umum dan membiarkan lapisan Suvarnabhumi kosong sampai data geometri batas siap.
 
 ## Urutan pengerjaan yang disarankan
 
 1. Siapkan kerangka halaman dan gaya visual.
-2. Bangun Beranda, Atlas wilayah, Atlas 50 kota, dan Distrik Warisan Barat.
-3. Tambahkan pencarian, tautan profil, dan tampilan ponsel.
-4. Rapikan sumber, metode, dan label estimasi.
-5. Tambahkan peta dan timeline setelah data pendukungnya siap.
+2. Bangun beranda peta dan hubungkan data wilayah.
+3. Bangun Atlas wilayah, Atlas 50 kota, dan Distrik Warisan Barat.
+4. Tambahkan pencarian, tautan profil, serta tampilan ponsel.
+5. Rapikan sumber, metode, dan label estimasi.
