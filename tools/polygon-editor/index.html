@@ -33,7 +33,7 @@ button.primary,button.secondary,button.ghost,button.danger{border:0;border-radiu
 <div class="title"><span class="n">01</span> Polygon sources</div>
 <p class="muted small">Add one GeoJSON layer at a time. For example, countries as ADM0 and districts as ADM2.</p>
 <label for="import-level">This file represents</label><select id="import-level"><option value="ADM0">ADM0 · country / territory</option><option value="ADM1">ADM1 · province / state</option><option value="ADM2" selected>ADM2 · district / kabupaten-kota</option></select>
-<div class="drop" id="drop"><div class="plus">＋</div><p><b>GeoJSON FeatureCollection</b><br>Polygon or MultiPolygon (.geojson / .json). Extract a GeoJSON file from ZIP first.</p><button class="secondary full" id="pick" type="button">Browse files</button><input id="file" type="file" accept=".geojson,.json,application/geo+json,application/json" hidden></div>
+<div class="drop" id="drop"><div class="plus">＋</div><p><b>GeoJSON FeatureCollection</b><br>Polygon or MultiPolygon (.geojson / .json). Extract a GeoJSON file from ZIP first.<br><a href="https://datacatalog.worldbank.org/search/dataset/0038272/world-bank-official-boundaries" target="_blank" rel="noreferrer">Get World Bank boundaries</a> · choose GeoJSON, then ADM0 / ADM1 / ADM2.</p><button class="secondary full" id="pick" type="button">Browse files</button><input id="file" type="file" accept=".geojson,.json,application/geo+json,application/json" hidden></div>
 <div class="sources" id="sources"></div>
 <div class="rule"></div>
 <div class="title"><span class="n">02</span> Find & select</div>
