@@ -17,7 +17,7 @@ Polygon processing runs locally in the browser. Files are not uploaded. The expo
 
 The GeoJSON is a FeatureCollection with a top-level `suvarnabhumi_schema` descriptor. Each feature has its original `geometry` and:
 
-- `properties.source`: source file, ADM level, source ID/name, country/ADM1/ADM2, and original source properties.
+- `properties.source`: source file, ADM level, source ID/name, country/ADM1/ADM2/ADM3, and original source properties.
 - `properties.suvarnabhumi`: assigned hierarchy values using `maha_mandala`, `mandala`, `cakravala`, `kadipatra`, `visaya`, `thana`, and `kampong`.
 
-For large global ADM2 or ADM3 GeoJSON files, use the country filter before drawing polygons on the map. The list remains searchable across the imported layer.
+For large global ADM2 or ADM3 GeoJSON files, use the country filter before drawing polygons on the map. The list remains searchable across the imported layer. Each file is limited to 350 MB; split larger global files by country. ADM3 is not available for every country, and its real-world scope varies by country.
