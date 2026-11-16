@@ -2,7 +2,7 @@
 
 ## Arah website
 
-Atlas digital Suvarnabhumi dengan peta sebagai beranda. Peta batas kanon dimulai kosong; halaman lain tetap memuat direktori wilayah, kota, tokoh, sejarah terpilih, dan enklave.
+Atlas digital Suvarnabhumi dengan peta sebagai landing page. Peta batas kanon dimulai kosong; halaman lain tetap memuat direktori wilayah, kota, tokoh, sejarah terpilih, dan enklave.
 
 ## Navigasi utama
 
