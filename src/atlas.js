@@ -41,7 +41,8 @@ export function mountMaharajaAtlas(map){
     const group=event.target.closest("[data-group]");if(group){showGroup(group.dataset.group);return}
     const area=event.target.closest("[data-area]");if(area){const l=byId.get(Number(area.dataset.area));if(l){focus(l.getBounds());l.openPopup()}}
   });
-  Promise.all(DATA_URLS.map(url=>fetch(url).then(r=>{if(!r.ok)throw Error("Geometry not published: "+url);return r.json()}))).then(collections=>{\n    const data={type:"FeatureCollection",features:collections.flatMap(item=>item.features||[])};
+  Promise.all(DATA_URLS.map(url=>fetch(url).then(r=>{if(!r.ok)throw Error("Geometry not published: "+url);return r.json()}))).then(collections=>{
+    const data={type:"FeatureCollection",features:collections.flatMap(item=>item.features||[])};
     if(!alive)return;
     if(data.type!=="FeatureCollection"||!Array.isArray(data.features))throw Error("Invalid map data");
     layer=L.geoJSON(data,{style:()=>style(),onEachFeature:(feature,l)=>{
