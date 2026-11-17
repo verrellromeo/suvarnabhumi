@@ -194,3 +194,15 @@ body:has(.history-scroll) .site-nav a[aria-current=page]{background:var(--navy2)
 .scroll-event--dark .scroll-read{background:var(--gold2);color:var(--navy);border-color:var(--gold)}.scroll-event--dark .scroll-story>summary:hover .scroll-read{background:var(--gold)}
 .scroll-event--dark .scroll-story-body{background:var(--navy)}.scroll-event--dark .scroll-prose p{color:#efe7de}.scroll-event--dark .scroll-end{border-top-color:#c9a26b72}.scroll-event--dark .scroll-end a,.scroll-event--dark .scroll-inset figcaption{color:var(--gold2)}
 .scroll-art-label{background:#081b2bbd;border-color:#c9a26b75;color:#f4eee2}.scroll-empty{background:var(--paper);color:var(--ink)}
+
+/* Restore the visual separation of the scroll cards while using atlas colors. */
+.scroll-story>summary{background:var(--paper);}
+.scroll-story-body{background:var(--paper);}
+.scroll-event--dark .scroll-story>summary,.scroll-event--dark .scroll-story-body{background:var(--navy);}
+.scroll-event--dark .scroll-art:after{background:linear-gradient(90deg,var(--navy),#081b2be0 28%,transparent 75%)}
+.scroll-art:after{background:linear-gradient(90deg,var(--paper),#fcf8f1c9 28%,transparent 65%)}
+.scroll-art img{opacity:1;}
+.scroll-event--dark .scroll-art img{opacity:.9;}
+.scroll-year{font-size:clamp(65px,7.7vw,118px);min-width:0;}
+.scroll-year--range{font-size:clamp(48px,5.4vw,82px);min-width:0;letter-spacing:-.055em;}
+@media(max-width:1000px) and (min-width:651px){.scroll-year--range{font-size:54px;min-width:0}}
