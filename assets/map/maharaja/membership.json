@@ -2855,5 +2855,5 @@
       }
     ]
   },
-  "note": "Partial ADM2: at least 45% planar overlap with previously SVG-matched regional geometry. SVG membership retains original names for audit."
+  "note": "Partial ADM2: at least 45% planar overlap with previously SVG-matched regional geometry. SVG membership retains original names for audit. SVG underscores do not unambiguously delimit ADM1 and ADM2; the CSV retains the unsplit raw suffix."
 }

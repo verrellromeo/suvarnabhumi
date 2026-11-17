@@ -35,10 +35,10 @@ for frame in tree.getroot().xpath('./*[local-name()="g"]/*[local-name()="g"]'):
             continue
         name, code = match
         parts = remainder[len(name)+1:].split('_')
-        rows.append((group,code,name,parts[0] if parts else '', '_'.join(parts[1:]),label))
+        rows.append((group,code,name,parts[0] if parts else '', '_'.join(parts[1:]),remainder[len(name)+1:],label))
 
 with (OUT/'svg-membership.csv').open('w',newline='') as f:
-    writer=csv.writer(f);writer.writerow(['cakravala_frame','adm0_code','adm0_svg','adm1_svg','adm2_svg','svg_path_class']);writer.writerows(rows)
+    writer=csv.writer(f);writer.writerow(['cakravala_frame','adm0_code','adm0_svg','adm1_first_token','remaining_tokens','adm1_adm2_raw','svg_path_class']);writer.writerows(rows)
 
 world=[]
 for pack in MANIFEST['worldPacks']:
@@ -79,6 +79,6 @@ if not merged.is_valid:
 result={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':'Maharaja Mandala'},'geometry':mapping(merged)}]}
 with gzip.open(OUT/'boundary.geojson.gz','wt',compresslevel=9) as f:
     json.dump(result,f,separators=(',',':'))
-summary={'svgSource':SVG.name,'svgFrames':len(tree.getroot().xpath('./*[local-name()="g"]/*[local-name()="g"]')),'svgPathsParsed':len(rows),'fullAdm0':sorted(FULL),'partialAdm0':sorted(PARTIAL),'mapSelection':dict(selected),'note':'Partial ADM2: at least 45% planar overlap with previously SVG-matched regional geometry. SVG membership retains original names for audit.'}
+summary={'svgSource':SVG.name,'svgFrames':len(tree.getroot().xpath('./*[local-name()="g"]/*[local-name()="g"]')),'svgPathsParsed':len(rows),'fullAdm0':sorted(FULL),'partialAdm0':sorted(PARTIAL),'mapSelection':dict(selected),'note':'Partial ADM2: at least 45% planar overlap with previously SVG-matched regional geometry. SVG membership retains original names for audit. SVG underscores do not unambiguously delimit ADM1 and ADM2; the CSV retains the unsplit raw suffix.'}
 (OUT/'membership.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 print('SVG',len(rows),'boundary parts',len(features),'partial counts',{c:len(selected[c]) for c in sorted(PARTIAL)},'bounds',merged.bounds)
