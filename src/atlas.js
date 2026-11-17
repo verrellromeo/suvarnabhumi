@@ -1,58 +1,32 @@
-// Data-driven drill-down for the imperial atlas. Feature geometry is loaded separately.
-const DATA_URLS=["MMR","IDN","CHN","MYS","KHM","LAO","VNM","BGD","PHL","THA","BRN","JPN","IND","TLS","SGP","TWN","SAR"].map(iso=>"./assets/map/"+iso+".geojson");
-const names={Srivijaya_Suvarnabhumi_Capital_Region:"Srivijaya Special Administrative Region",Malaya_Islands:"Malaya Islands Capital Region"};
-const display=key=>names[key]||String(key||"").replaceAll("_"," ");
-const esc=value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const getGroup=feature=>feature.properties?.cakravala||feature.properties?.group||null;
-const style=(selected=false)=>({color:selected?"#f3d49b":"#d5ac6c",weight:selected?2:1,fillColor:selected?"#ba7c3f":"#c9a26b",fillOpacity:selected?.49:.22});
+// UNICEF GeoRepo snapshot, partitioned by country and loaded on demand.
+const BASE="./assets/map/global/";
+const packCache=new Map();
+async function readCompressed(url){const response=await fetch(url);if(!response.ok)throw Error(`HTTP ${response.status}`);const stream=response.body.pipeThrough(new DecompressionStream("gzip"));return JSON.parse(await new Response(stream).text())}
+async function countryData(id,manifest){const pack=manifest.countries[id].pack;if(!packCache.has(pack))packCache.set(pack,readCompressed(`${BASE}packs/${pack}`).catch(error=>{packCache.delete(pack);throw error}));return (await packCache.get(pack))[id]}
+const escape=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const style=(selected=false,assigned=false)=>({color:selected?"#fff1c4":assigned?"#e2ba74":"#b2c0bf",weight:selected?2:.8,fillColor:selected?"#e5a84f":assigned?"#b97837":"#91aeb2",fillOpacity:selected?.65:assigned?.43:.2});
 export function mountMaharajaAtlas(map){
-  let alive=true,layer=null,selected=null;
-  const root=document.createElement("section");
-  root.className="atlas-panel";
-  root.setAttribute("aria-label","Imperial atlas explorer");
-  root.innerHTML='<span class="atlas-panel__eyebrow">IMPERIAL ATLAS / MAHARAJA MANDALA</span><h2>Explore the Mandala</h2><p class="atlas-panel__status" role="status">Loading regional boundaries…</p><div class="atlas-panel__breadcrumb"></div><div class="atlas-panel__list"></div>';
+  let alive=true,world=null,detail=null,current=null,selected=null,manifest=null;
+  const saved=JSON.parse(localStorage.getItem("suvarnabhumi-adm2-assignments")||"{}");
+  const root=document.createElement("section");root.className="atlas-panel";root.setAttribute("aria-label","Global ADM2 atlas");
+  root.innerHTML='<span class="atlas-panel__eyebrow">SUVARṆABHŪMI / GLOBAL ATLAS</span><h2>World ADM2</h2><p class="atlas-panel__status" role="status">Loading countries…</p><div class="atlas-panel__breadcrumb"></div><div class="atlas-tools"><input type="search" placeholder="Search country or district" aria-label="Search map"/><button type="button" data-export>Export selections</button></div><div class="atlas-panel__list"></div><div class="atlas-editor" hidden><strong class="atlas-editor__name"></strong><label>Mandala <input data-mandala placeholder="e.g. Maharaja Mandala"></label><label>Cakravala <input data-cakravala placeholder="e.g. Malaya Islands"></label><button type="button" data-save>Save area</button><button type="button" data-clear>Clear assignment</button></div><p class="atlas-credit">Boundaries: UNICEF GeoRepo (CC BY 4.0), September 2026. Administrative geography is a reference layer, not imperial canon.</p>';
   document.querySelector("#home")?.append(root);
-  const status=root.querySelector(".atlas-panel__status"),crumb=root.querySelector(".atlas-panel__breadcrumb"),list=root.querySelector(".atlas-panel__list");
-  const focus=target=>{if(target?.isValid?.())map.flyToBounds(target,{padding:[45,45],maxZoom:8,duration:1.1})};
-  function showMandala(){
-    selected=null;
-    layer.eachLayer(l=>l.setStyle(style()));
-    crumb.innerHTML='<span>Maharaja Mandala</span>';
-    const groups=new Map();
-    layer.eachLayer(l=>{const key=getGroup(l.feature);if(key){if(!groups.has(key))groups.set(key,[]);groups.get(key).push(l)}});
-    status.textContent=groups.size+" Cakravalas mapped so far · 16-country coverage";
-    list.innerHTML=[...groups.keys()].sort((a,b)=>display(a).localeCompare(display(b))).map(key=>'<button type="button" data-group="'+esc(key)+'"><span>'+esc(display(key))+'</span><span aria-hidden="true">→</span></button>').join("");
-    if(document.querySelector("#home")?.classList.contains("is-exploring"))focus(layer.getBounds());
-  }
-  function showGroup(key){
-    selected=key;
-    const found=[];
-    layer.eachLayer(l=>{const on=getGroup(l.feature)===key;l.setStyle(style(on));if(on){l.bringToFront();found.push(l)}});
-    if(!found.length)return;
-    const bounds=L.featureGroup(found).getBounds();
-    crumb.innerHTML='<button type="button" data-back="mandala">Maharaja Mandala</button><span aria-hidden="true"> / </span><span>'+esc(display(key))+'</span>';
-    status.textContent=found.length+" mapped administrative areas";
-    list.innerHTML=found.map(l=>{const p=l.feature.properties||{};const label=p.label||[p.NAME_1,p.NAME_2,p.NAME_3].filter(Boolean).join(" · ")||p.name||"Area";return '<button type="button" data-area="'+esc(String(L.stamp(l)))+'"><span>'+esc(label)+'</span><span aria-hidden="true">↗</span></button>'}).join("");
-    focus(bounds);
-  }
-  const byId=new Map();
-  root.addEventListener("click",event=>{
-    const back=event.target.closest("[data-back]");if(back){showMandala();return}
-    const group=event.target.closest("[data-group]");if(group){showGroup(group.dataset.group);return}
-    const area=event.target.closest("[data-area]");if(area){const l=byId.get(Number(area.dataset.area));if(l){focus(l.getBounds());l.openPopup()}}
-  });
-  Promise.all(DATA_URLS.map(url=>fetch(url).then(r=>{if(!r.ok)throw Error("Geometry not published: "+url);return r.json()}))).then(collections=>{
-    const data={type:"FeatureCollection",features:collections.flatMap(item=>item.features||[])};
-    if(!alive)return;
-    if(data.type!=="FeatureCollection"||!Array.isArray(data.features))throw Error("Invalid map data");
-    layer=L.geoJSON(data,{style:()=>style(),onEachFeature:(feature,l)=>{
-      byId.set(L.stamp(l),l);
-      const p=feature.properties||{};
-      const label=p.label||[p.NAME_1,p.NAME_2,p.NAME_3].filter(Boolean).join(" · ")||p.name||"Area";
-      l.bindPopup('<strong>'+esc(label)+'</strong><br>'+esc(display(getGroup(feature)||"Maharaja Mandala")));
-      l.on("click",()=>{if(!document.querySelector("#home")?.classList.contains("is-exploring"))document.querySelector("#explore-map")?.click();showGroup(getGroup(feature));l.openPopup()});
-    }}).addTo(map);
-    showMandala();
-  }).catch(()=>{if(alive){status.textContent="Regional boundaries could not be loaded. Please retry later.";list.innerHTML="";crumb.innerHTML=""}});
-  return()=>{alive=false;root.remove();if(layer)map.removeLayer(layer)};
+  const status=root.querySelector(".atlas-panel__status"),crumb=root.querySelector(".atlas-panel__breadcrumb"),list=root.querySelector(".atlas-panel__list"),search=root.querySelector('input[type="search"]'),editor=root.querySelector(".atlas-editor");
+  const fit=l=>{if(l?.getBounds()?.isValid())map.fitBounds(l.getBounds(),{padding:[35,35],maxZoom:8})};
+  const countryName=id=>manifest?.countries[id]?.name||id;
+  function showCountries(){current=null;selected=null;editor.hidden=true;if(detail){map.removeLayer(detail);detail=null}world?.setStyle({opacity:1,fillOpacity:.28});crumb.textContent="World";search.value="";renderCountries()}
+  function renderCountries(){const q=search.value.toLocaleLowerCase();const ids=Object.keys(manifest?.countries||{}).filter(id=>(countryName(id)+" "+id).toLocaleLowerCase().includes(q)).sort((a,b)=>countryName(a).localeCompare(countryName(b)));status.textContent=`${Object.keys(manifest?.countries||{}).length} entities · ${manifest?.total?.toLocaleString()||0} ADM2 areas`;list.innerHTML=ids.map(id=>`<button type="button" data-country="${escape(id)}"><span>${escape(countryName(id))}</span><small>${manifest.countries[id].count.toLocaleString()}</small></button>`).join("")||"No matching country"}
+  function renderAreas(){const q=search.value.toLocaleLowerCase();let layers=[];detail?.eachLayer(l=>{if((l.feature.properties.name||"").toLocaleLowerCase().includes(q))layers.push(l)});status.textContent=`${manifest.countries[current].count.toLocaleString()} ADM2 areas in ${countryName(current)} · ${layers.length.toLocaleString()} shown`;list.innerHTML=layers.slice(0,250).map(l=>`<button type="button" data-area="${escape(l.feature.properties.id)}"><span>${escape(l.feature.properties.name)}</span><small>${saved[l.feature.properties.id]?"●":"↗"}</small></button>`).join("")+(layers.length>250?"<p>Showing first 250. Search to narrow the list.</p>":"")}
+  async function openCountry(id){current=id;selected=null;editor.hidden=true;search.value="";crumb.innerHTML=`<button type="button" data-back>World</button> / ${escape(countryName(id))}`;status.textContent="Loading ADM2 boundaries…";list.innerHTML="";if(detail)map.removeLayer(detail);detail=null;
+    try{const data=await countryData(id,manifest);if(!data)throw Error("No geometry in snapshot");if(!alive||current!==id)return;
+      detail=L.geoJSON(data,{style:f=>style(false,!!saved[f.properties.id]),onEachFeature:(f,l)=>{l.on("click",()=>select(l));l.bindTooltip(f.properties.name||f.properties.id,{sticky:true})}}).addTo(map);fit(detail);world?.setStyle({opacity:.25,fillOpacity:.04});renderAreas();
+    }catch(error){status.textContent=`Could not load ${countryName(id)}: ${error.message}`;list.innerHTML='<button type="button" data-retry>Retry</button>'}}
+  function select(layer){if(selected)selected.setStyle(style(false,!!saved[selected.feature.properties.id]));selected=layer;layer.setStyle(style(true));layer.bringToFront();const p=layer.feature.properties,a=saved[p.id]||{};editor.hidden=false;editor.querySelector(".atlas-editor__name").textContent=p.name||p.id;editor.querySelector("[data-mandala]").value=a.mandala||"";editor.querySelector("[data-cakravala]").value=a.cakravala||"";layer.openTooltip()}
+  root.addEventListener("click",e=>{const el=e.target.closest("button");if(!el)return;if(el.hasAttribute("data-back")){showCountries();return}if(el.dataset.country){openCountry(el.dataset.country);return}if(el.hasAttribute("data-retry")){openCountry(current);return}if(el.dataset.area){detail?.eachLayer(l=>{if(l.feature.properties.id===el.dataset.area){select(l);fit(l)}});return}
+    if(el.hasAttribute("data-save")&&selected){const p=selected.feature.properties,mandala=editor.querySelector("[data-mandala]").value.trim(),cakravala=editor.querySelector("[data-cakravala]").value.trim();if(!mandala||!cakravala){status.textContent="Fill in both Mandala and Cakravala.";return}saved[p.id]={name:p.name,country:current,mandala,cakravala};localStorage.setItem("suvarnabhumi-adm2-assignments",JSON.stringify(saved));selected.setStyle(style(true,true));renderAreas();return}
+    if(el.hasAttribute("data-clear")&&selected){delete saved[selected.feature.properties.id];localStorage.setItem("suvarnabhumi-adm2-assignments",JSON.stringify(saved));selected.setStyle(style(true));renderAreas();return}
+    if(el.hasAttribute("data-export")){const blob=new Blob([JSON.stringify({schema:"suvarnabhumi-adm2-v1",source:"UNICEF GeoRepo 2026-09-16",assignments:saved},null,2)],{type:"application/json"});const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="suvarnabhumi-adm2-selections.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}});
+  search.addEventListener("input",()=>current?renderAreas():renderCountries());
+  fetch(`${BASE}manifest.json`).then(r=>{if(!r.ok)throw Error("Manifest unavailable");return r.json()}).then(async m=>{manifest=m;renderCountries();const parts=await Promise.all(m.worldPacks.map(name=>readCompressed(`${BASE}${name}`)));if(!alive)return;world=L.geoJSON({type:"FeatureCollection",features:parts.flatMap(p=>p.features)},{style:{color:"#c9a26b",weight:1,fillColor:"#62818c",fillOpacity:.28},onEachFeature:(f,l)=>{l.on("click",()=>{if(manifest.countries[f.properties.country])openCountry(f.properties.country)});l.bindTooltip(f.properties.name||f.properties.country,{sticky:true})}}).addTo(map)}).catch(err=>{status.textContent=`Global atlas unavailable: ${err.message}`});
+  return()=>{alive=false;root.remove();if(detail)map.removeLayer(detail);if(world)map.removeLayer(world)};
 }
