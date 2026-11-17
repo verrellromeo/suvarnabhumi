@@ -1,6 +1,6 @@
 # Maharaja Mandala boundary sources
 
-Published geometry comes from [geoBoundaries gbOpen](https://www.geoboundaries.org/), simplified from the source geometry for web display. The uploaded GADM files were used **locally for label matching and spatial reconciliation only**; GADM geometry is not redistributed in this repository.
+The Mandala explorer's 4,301 geometry features come from [geoBoundaries gbOpen](https://www.geoboundaries.org/) and the source datasets listed below. Cakravala membership follows the 29 parent frame groups in the supplied SVG. The gold overview boundaries are dissolved unions of the corresponding open regional polygons; opening a Cakravala reveals those ADM2/ADM3 polygons. The uploaded GADM files were used locally for comparison only. GADM's [license](https://gadm.org/license.html) prohibits redistribution without prior permission, so its geometry is not included in the site data.
 
 | Country | geoBoundaries boundary ID | Original source | Licence |
 | --- | --- | --- | --- |
@@ -22,8 +22,15 @@ Published geometry comes from [geoBoundaries gbOpen](https://www.geoboundaries.o
 | Taiwan | TWN-ADM1-90331920 | geoBoundaries gbOpen source metadata | ODbL 1.0 |
 | Hong Kong and Macau | CHN-ADM1-43563684 | National Administration of Surveying, Mapping and Geoinformation of China; Revolutionary GIS | ODC PDDL 1.0 |
 
-The current release maps 4,301 open-geometry units across 16 country datasets, covering all 29 SVG Cakravalas at different completeness levels. A feature's `matchConfidence` records the share of its area overlapping the assigned Cakravala in the local reconciliation. It is **not** a historical or legal claim to the boundary.
+The current release maps 4,301 open-geometry units across 16 country datasets, covering all 29 SVG Cakravalas at different completeness levels. The site packages dissolved Cakravala boundaries and lazy-loaded member areas under `assets/map/maharaja/` for the Mandala → Cakravala → ADM2 explorer. A feature's `matchConfidence` records the share of its area overlapping the assigned Cakravala in the local reconciliation. It is **not** a historical or legal claim to the boundary.
 
-The source SVG contains 29 Cakravalas. Philippines uses ADM3, most other sources use ADM2; a number of SVG municipalities remain unmatched because names and administrative editions differ. Singapore and Taiwan have separate ADM1 geometry. Hong Kong and Macau have two separate ADM1 shapes; their 17 and two respective SVG subdistrict shapes await matching open district geometry. The extra Myanmar SVG label `Magyaw_Minbu-42` has no matching GADM unit and was excluded. The geoBoundaries `Yamethin` district overlaps both Northern and Southern Pagan classifications and was assigned to the largest overlap (63%); its division needs manual review.
+The source SVG contains 29 Cakravalas. Philippines uses ADM3, most other sources use ADM2; a number of SVG municipalities remain unmatched because names and administrative editions differ. Singapore and Taiwan have separate ADM1 geometry. Hong Kong and Macau have two separate ADM1 shapes; their 17 and two respective SVG subdistrict shapes await matching open district geometry. The geoBoundaries `Yamethin` district overlaps both Northern and Southern Pagan classifications and was assigned to the largest overlap (63%); its division needs manual review.
 
 Display corrections: SVG `Srivijaya_Suvarnabhumi_Capital_Region` appears as **Srivijaya Special Administrative Region**, and `Malaya_Islands` appears as **Malaya Islands Capital Region**.
+
+Rebuild the hierarchy data after updating the source regional layers:
+
+```sh
+python -m pip install shapely
+python tools/build-maharaja-atlas.py path/to/maharaja-mandala.svg
+```
