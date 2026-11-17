@@ -8,7 +8,7 @@ The city layer contains the 62 Suvarnabhumi city names and real-world location r
 
 ## Canon decisions
 
-City names follow the user's supplied spelling. The explicit mapping takes precedence over older city entries elsewhere in the project: **Srivijaya is placed at Jambi**. **Dali is placed at Dali, Yunnan**; the original location string “Dalu” was corrected by the user before implementation. Guilin is intentionally placed at Qinzhou and Katagalan at Kaohsiung, following the supplied mappings rather than matching the Suvarnabhumi name to a modern city of the same name.
+City names follow the user's supplied spelling. The explicit mapping takes precedence over older city entries elsewhere in the project: **Srivijaya is placed at Palembang**, following the user’s latest correction. **Dali is placed at Dali, Yunnan**; the original location string “Dalu” was corrected by the user before implementation. Guilin is intentionally placed at Qinzhou and Katagalan at Kaohsiung, following the supplied mappings rather than matching the Suvarnabhumi name to a modern city of the same name.
 
 Maharajapura is marked as the imperial capital, at Batam. Other entries are marked as major cities. No population, city rank, or Cakravala-capital designation has been invented for this layer.
 
@@ -18,7 +18,7 @@ These points locate cities; they do not define city or metropolitan boundaries.
 
 | City | Supplied reference | Representative point |
 |---|---|---|
-| Kota Kapur | Belitung | Tanjung Pandan; provisional urban anchor for the island |
+| Kota Kapur | Kota Kapur, Bangka | Kotakapur village, Mendo Barat, Bangka; corrected by the user from the earlier Belitung reference |
 | Natuna | Pulau Natuna | Ranai Kota; provisional urban anchor for the island |
 | Pagaruyung | Pagaruyung | Istano Basa Pagaruyung landmark |
 | Borobudur | Borobudur | Candi Borobudur landmark |
@@ -52,12 +52,16 @@ Pagaruyung landmark coordinate: [Arsip Nasional Republik Indonesia, diplomatic l
 
 The city's fictional name and modern location mapping come from the user. The coordinates and map affiliations are derived data and can be refined when the user supplies a landmark or a more precise point.
 
+## Latest location corrections
+
+The user subsequently corrected Srivijaya to Palembang and Kota Kapur to Kota Kapur on Bangka. Both coordinates are covered by their respective map ADM2 polygons (`Kota Palembang` and `Bangka`) within Srivijaya Special Administrative Region. The Return to Srivijaya shortcut targets the updated Palembang coordinate. The public browser checks documented above preceded this correction; the revised points were checked against the current geometry.
+
 ## Updating a location
 
 Edit the city record in `assets/map/cities/maharaja.json` and keep `maharaja-locations.csv` synchronized. Preserve its stable `id`, user-supplied name, and location reference. If coordinates change, recalculate the map ADM2/Cakravala affiliation against the current repaired polygons and update the source/method fields. Validate unique IDs, finite WGS84 coordinates, and valid affiliation IDs before committing.
 
 ## Validation for the first release
 
-The 62 unique entries were checked against the supplied references and current map membership IDs. Module-level checks cover initial marker counts, the imperial-capital marker, the Jambi reference for Srivijaya, Cakravala and country filters, the toggle, and cleanup when navigating away. These checks use lightweight map/DOM doubles. Syntax checks pass for both city and atlas modules. Public-site browser checks on 17 November 2026 verified all 62 marker buttons, the Srivijaya popup with Jambi as its reference, the Malaya Islands filter showing Maharajapura and Natuna, and the Cities toggle hiding and restoring the markers.
+The 62 unique entries were checked against the supplied references and current map membership IDs. Module-level checks cover initial marker counts, the imperial-capital marker, the Jambi reference for Srivijaya, Cakravala and country filters, the toggle, and cleanup when navigating away. These checks use lightweight map/DOM doubles. Syntax checks pass for both city and atlas modules. Public-site browser checks on 17 November 2026 verified all 62 marker buttons, the original Srivijaya popup (subsequently corrected from Jambi to Palembang), the Malaya Islands filter showing Maharajapura and Natuna, and the Cities toggle hiding and restoring the markers.
 
 ![Maharajapura and Natuna in the Malaya Islands city layer](images/maharaja-cities.jpg)
