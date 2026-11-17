@@ -30,3 +30,32 @@
 
 /* Cities stay above boundary layers; labels yield to each other and the panel. */
 .atlas-city-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #c9a26b30;font:11px var(--sans);color:#d2c5ae}.atlas-city-controls label{display:flex;align-items:center;gap:7px;cursor:pointer;color:#f5e3bc}.atlas-city-controls input{accent-color:#d6b36f}.atlas-city-icon{display:grid;place-items:center;background:transparent;border:0}.atlas-city-icon>span{display:block;width:7px;height:7px;border-radius:50%;background:#f6e9cc;border:1.5px solid #152f3e;box-shadow:0 0 0 1px #ddbb76aa,0 1px 4px #07162188}.atlas-city-icon--capital>span{width:auto;height:auto;background:none;border:0;box-shadow:none;border-radius:0;font-size:20px;line-height:1;color:#f4cd77;text-shadow:0 1px 3px #071621,0 0 3px #071621}.atlas-city-label.leaflet-tooltip{pointer-events:none;background:#102a38e8;border:1px solid #c9a26b65;border-radius:3px;box-shadow:0 2px 8px #07162133;color:#f6e9cc;padding:4px 7px;font:500 11px/1.25 var(--sans);white-space:nowrap}.atlas-city-label.leaflet-tooltip-right:before{border-right-color:#c9a26b65}.atlas-city-popup-shell .leaflet-popup-content-wrapper,.atlas-city-popup-shell .leaflet-popup-tip{background:#102b3a;color:#f8edda}.atlas-city-popup-shell .leaflet-popup-content-wrapper{border:1px solid #c9a26b88;border-radius:6px}.atlas-city-popup h3{font:500 25px/1.1 var(--serif);margin:7px 0 12px;color:#f6dfab}.atlas-city-popup p{font:12px/1.6 var(--sans);margin:8px 0}.atlas-city-popup__eyebrow{font:9px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:#d6b36f}.atlas-city-popup .atlas-city-popup__reference{font-size:10px;color:#c3c4bf}.atlas-city-popup-shell a.leaflet-popup-close-button{color:#dec391}
+
+/* Nested era → event disclosures, matching the original gold timeline. */
+.history-layout{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:start}
+.history-feature{position:sticky;top:100px}
+.history-rail> .history-event{margin-bottom:30px}
+.history-era{padding:0 0 30px}
+.history-era>summary,.history-event>summary{position:relative;display:block;list-style:none;cursor:pointer;padding:0 30px 10px 0;border-radius:3px}
+.history-era>summary::-webkit-details-marker,.history-event>summary::-webkit-details-marker{display:none}
+.history-era>summary:focus-visible,.history-event>summary:focus-visible{outline:2px solid #ad7d43;outline-offset:6px}
+.history-era>summary:hover strong,.history-event>summary:hover strong{color:#967044}
+.history-era[open]:before{background:#ad7d43;box-shadow:0 0 0 4px var(--paper)}
+.history-era__hint,.history-event__place{display:block;font:12px/1.5 var(--sans);color:var(--muted);margin-top:6px}
+.history-toggle{position:absolute;right:4px;top:4px;font:400 23px/1 var(--sans);color:#967044;transition:transform .2s}
+.history-era[open]>summary>.history-toggle,.history-event[open]>summary>.history-toggle{transform:rotate(45deg)}
+.history-era__intro,.history-empty{font:14px/1.7 var(--sans)!important;color:var(--muted);margin:8px 0 22px!important}
+.history-events{border-left:1px solid var(--line);padding-left:20px;margin:18px 0 0 3px}
+.history-event{position:relative;margin:0;padding:0 0 20px;min-width:0}
+.history-event:before{content:"";position:absolute;width:8px;height:8px;left:-25px;top:8px;border:1.5px solid #ad7d43;border-radius:50%;background:var(--paper)}
+.history-event[open]:before{background:#ad7d43}
+.history-event time{display:block;color:#967044;font-size:11px;font-weight:700}
+.history-event strong{display:block;font:500 23px/1.15 var(--serif);overflow-wrap:break-word}
+.history-event__body{border-top:1px solid var(--line);margin:6px 0 12px;padding-top:12px}
+.history-event__body p{font:14px/1.75 var(--sans);color:var(--ink);margin:0}
+.history-reading-note{border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font:12px/1.7 var(--sans)}
+.history-rail>.history-event:before{width:12px;height:12px;left:-35px;border-width:2px}
+.history-rail>.history-event strong{font-size:24px}
+@media(max-width:900px){.history-layout{gap:28px}.history-feature{padding:25px}.history-feature h2{font-size:36px}}
+@media(max-width:690px){.history-layout{grid-template-columns:minmax(0,1fr)}.history-feature{position:static}.history-era>summary strong{font-size:28px}.history-events{padding-left:18px}.history-events>.history-event:before{left:-23px}.history-event strong{font-size:23px}}
+@media(prefers-reduced-motion:reduce){.history-toggle{transition:none}}

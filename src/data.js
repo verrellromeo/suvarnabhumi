@@ -15,6 +15,44 @@ export const history = [
   {date:"1749",title:"The return of the enclaves",body:"European trading enclaves return to Suvarnabhumi's sovereignty.",place:"Western heritage districts"},
   {date:"1750",title:"The conquest of Zanzibar",body:"Zanzibar enters the imperial realm along the East African coast.",place:"Ratnadvipa"}
 ];
+// Expandable chronology template. Short event previews precede full canon articles.
+export const historyEras = [
+  {id:'pra-suvarnabhumi',date:'1017–1072',title:'Pra-Suvarnabhumi',summary:'From the royal massacre of 1017 to the dynastic alliances that prepared the Union of Suvarnabhumi.',events:[
+    {date:'1017',title:'Chola Invasion',place:'Srivijaya / Palembang',body:'The Royal Massacre of 1017 destroys the old court without establishing permanent Chola rule. Suryaputradewa survives in exile, leaving a path toward dynastic restoration.'},
+    {date:'1018',title:'Registry of Orphaned Houses',place:'Surviving port communities',body:'Local scribes, merchant elders and religious custodians record displaced dependants and disputed household claims. The emerging coalition supports protection through its commercial contacts.'},
+    {date:'1017–1025',title:'Rise of Suryaputradewa',place:'The Srivijayan maritime network',body:'The exiled royal relative builds a coalition of merchants, surviving admirals and port communities. Ships, credit and local alliances make his return possible.'},
+    {date:'1021',title:'Restoration of River Markets',place:'Cooperating river ports',body:'Selected markets reopen through local agreements on tolls, escorted supplies and repaired landings. Commercial recovery strengthens the coalition before full restoration.'},
+    {date:'1025',title:'Sumpah Nagara',place:'Srivijaya',body:'The oath binds the restored order to collective protection and maritime unity. The memory of 1017 becomes a political argument against fragmented ports and rival loyalties.'},
+    {date:'1025–1027',title:'Unification of Sumatera',place:'Sumatera',body:'Diplomacy, naval pressure and negotiated submission bind major ports and river corridors to the center. Local rulers retain roles while losing independent strategic authority.'},
+    {date:'1026',title:'The First Harbor Law',place:'Ports under Nagara authority',body:'An early ordinance clarifies declared cargo, recognized tolls, anchorage and port disputes. Enforcement develops unevenly as ports accept Nagara rule.'},
+    {date:'1027',title:'The Widows and Sailors Relief Fund',place:'The maritime core',body:'A limited reserve of grain, cloth and coin supports injured crews and verified dependants of sailors lost in service. Assistance depends on available supplies and local testimony.'},
+    {date:'1029–1032',title:'Occupation of Malay Peninsula',place:'The Malay Peninsula',body:'Kadaram and other strategic ports enter an occupation and protection network. Controlling both shores turns the straits into a guarded system of ports, registries and garrisons.'},
+    {date:'1032',title:'Royal Marriage with Song',place:'The Song–Srivijaya courts',body:'Suryaputradewa marries a direct daughter of the Song emperor. The pact strengthens dynastic recognition, regulated trade and the connection between the two courts.'},
+    {date:'1033',title:'The House of Mixed Blood Debate',place:'The Srivijayan court',body:'Court factions contest the standing of mixed merchant households after the Song marriage. The ruler protects recognized loyalty and service without abolishing aristocratic rank.'},
+    {date:'1037',title:'Conquest of Sunda',place:'Western Java',body:'The Western Java Gate Campaign extends Nagara control toward Sunda and the strategic approaches between Sumatera and Java.'},
+    {date:'1041',title:'Conquest of Tambralingga',place:'The northern peninsula',body:'The campaign resolves the northern peninsula threat left unfinished by earlier occupation. It extends the security system beyond the first straits settlements.'},
+    {date:'1045',title:'First School of Explorer and Navigators',place:'The Srivijayan maritime core',body:'A small royal-supported apprenticeship brings experienced navigators together with selected crews. Coastal surveying, seasonal winds, sounding lines and route notes prepare the ground for later navigation academies.'},
+    {date:'1051',title:'Thai People Protectorate',place:'The mainland frontier',body:'Thai communities seek protection from pressure by neighboring powers. Srivijayan patronage creates a new mainland frontier relationship.'},
+    {date:'1059',title:'Khmer Invasion of Thai Protectorate',place:'The Thai–Khmer frontier',body:'Khmer attacks trigger a joint Srivijayan and Thai response. The counter-offensive occupies frontier territories and accelerates Thai political consolidation.'},
+    {date:'1060',title:'Settlement among Borneo River Kingdoms',place:'Borneo river networks',body:'Settlement and negotiated relationships establish an eastern foothold among river authorities. Practical access depends on local communities and navigable routes.'},
+    {date:'1061',title:'Conquest of Borneo',place:'Borneo',body:'The Borneo Mandala War brings key river and coastal authorities into the Nagara order. Political claims do not imply uniform direct control over the island interior.'},
+    {date:'1062',title:'The Borneo Timber Standard',place:'Registered timber ports',body:'Procurement agreements distinguish suitable shipbuilding timber, accepted loads and paid purchases from tribute. River intermediaries remain essential to supply and enforcement.'},
+    {date:'1065',title:'Council of Frontier Governors',place:'The Srivijayan court',body:'Dependent rulers, commanders and port representatives clarify negotiated tribute, service and reporting obligations. Consultation helps make the expanding order less dependent on personal commands.'},
+    {date:'1072',title:'Rise of Aryanagara Syailendra',place:'The Syailendra court',body:'The son of Suryaputradewa and the Song princess emerges as the dynastic successor. His rise shifts the narrative from the founder’s restoration toward an inheritable union.'},
+    {date:'1072',title:'Royal Marriage of Syailendra–Thai',place:'Srivijaya and Tainagara',body:'Aryanagara marries into the royal house of Tainagara. The alliance binds maritime, Song and Thai frontier legitimacy before the Union of Suvarnabhumi.'}
+  ]},
+  {id:'first-union',date:'1072–1126',title:'First Union and Maritime Consolidation',events:[]},
+  {id:'song-migration',date:'1127–1182',title:'Song Migration and Oceanic Expansion',events:[]},
+  {id:'bhumi-hangus',date:'1183–1230',title:'Bhumi Hangus and Bharatanagara Conquest',events:[]},
+  {id:'imperial-codification',date:'1231–1273',title:'Imperial Codification and Northern Migrations',events:[]},
+  {id:'mandate-of-heaven',date:'1273–1306',title:'Mandate of Heaven Period',events:[]},
+  {id:'kemaharajaan',date:'1307–1351',title:'Birth of Kemaharajaan',events:[history[1]]},
+  {id:'eastern-renaissance',date:'1352–1460',title:'Eastern Renaissance: The Age of Peace and Tranquility',events:[history[2]]},
+  {id:'oceanic-colonialism',date:'1460–1749',title:'Age of Oceanic Colonialism',events:[history[3],history[4]]},
+  {id:'imperial-century',date:'1749–1850',title:'Maharajapura Imperial Century',events:[history[5]]},
+  {id:'industrial-transformation',date:'1850–1945',title:'Industrial-Secular Transformation',events:[]},
+  {id:'modern-suvarnabhumi',date:'1945–Present',title:'Modern Suvarnabhumi and the Global Mandala Order',events:[]}
+];
 export const characters = [
   {id:"suryaputradeva",name:"Suryaputradeva",role:"Maharaja of Srivijaya",period:"Reign dates pending canon",image:"https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=1200&q=85",summary:"A ruler associated with the Srivijayan foundations of Suvarnabhumi.",details:"This profile is an editorial template. A verified portrait, genealogy and reign dates will be added from the imperial canon.",connections:["Srivijaya","Musi River"]},
   {id:"navasuvara",name:"Navasuvara",role:"Protector and dynastic unifier",period:"c. 1380",image:"https://images.unsplash.com/photo-1564399579888-c2cfb95497cb?w=1200&q=85",summary:"A figure in the protection, protectorate and dynastic union of Sukhothai.",details:"The established sequence is protection, protectorate and dynastic union around 1380. Other biographical details await a canon source.",connections:["Sukhothai","Imperial history"]}
