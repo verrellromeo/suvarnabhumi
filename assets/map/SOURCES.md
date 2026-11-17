@@ -12,12 +12,12 @@ Published geometry comes from [geoBoundaries gbOpen](https://www.geoboundaries.o
 | Laos | LAO-ADM2-54806243 | National Geographic Department; OCHA ROAP | CC BY 3.0 IGO |
 | Vietnam | VNM-ADM2-81297802 | OCHA ROAP; Government of Viet Nam | CC BY 3.0 IGO |
 | Bangladesh | BGD-ADM2-16705992 | Bangladesh Bureau of Statistics; OCHA ROAP | CC BY 3.0 IGO |
-| Philippines | PHL-ADM3 | geoBoundaries gbOpen source metadata | CC BY 3.0 IGO |
-| Thailand | THA-ADM2 | geoBoundaries gbOpen source metadata | CC BY 3.0 IGO |
-| Brunei | BRN-ADM2 | geoBoundaries gbOpen source metadata | Public Domain |
-| Japan | JPN-ADM2 | geoBoundaries gbOpen source metadata | CC BY-SA (see source metadata) |
-| India | IND-ADM2 | geoBoundaries gbOpen source metadata | ODbL 1.0 |
-| Timor-Leste | TLS-ADM2 | geoBoundaries gbOpen source metadata | CC BY 3.0 IGO |
+| Philippines | PHL-ADM3-30758251 | NAMRIA, Philippines Statistics Authority, OCHA Philippines | CC BY 3.0 IGO |
+| Thailand | THA-ADM2-78962969 | Royal Thai Survey Department, OCHA ROAP | CC BY 3.0 IGO |
+| Brunei | BRN-ADM2-61948251 | geoBoundaries, Wikimedia Commons (Rarelibra) | Public Domain |
+| Japan | JPN-ADM2-22064153 | OpenStreetMap, Wambacher | CC BY-SA 2.0 |
+| India | IND-ADM2-76128533 | Pathways Data Pvt. Ltd., lgdirectory.gov.in | ODbL 1.0 |
+| Timor-Leste | TLS-ADM2-22284137 | WHO, OCHA ROAP | CC BY 3.0 IGO |
 
 The current release maps 4,273 open-geometry units across 14 countries, covering all 29 SVG Cakravalas at different completeness levels. A feature's `matchConfidence` records the share of its area overlapping the assigned Cakravala in the local reconciliation. It is **not** a historical or legal claim to the boundary.
 
