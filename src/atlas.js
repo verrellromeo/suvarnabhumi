@@ -1,5 +1,5 @@
 // Data-driven drill-down for the imperial atlas. Feature geometry is loaded separately.
-const DATA_URLS=["MMR","IDN","CHN","MYS","KHM","LAO","VNM","BGD","PHL","THA","BRN","JPN","IND","TLS","SGP","TWN"].map(iso=>"./assets/map/"+iso+".geojson");
+const DATA_URLS=["MMR","IDN","CHN","MYS","KHM","LAO","VNM","BGD","PHL","THA","BRN","JPN","IND","TLS","SGP","TWN","SAR"].map(iso=>"./assets/map/"+iso+".geojson");
 const names={Srivijaya_Suvarnabhumi_Capital_Region:"Srivijaya Special Administrative Region",Malaya_Islands:"Malaya Islands Capital Region"};
 const display=key=>names[key]||String(key||"").replaceAll("_"," ");
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
