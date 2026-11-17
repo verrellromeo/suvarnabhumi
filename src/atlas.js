@@ -1,5 +1,5 @@
 // Data-driven drill-down for the imperial atlas. Feature geometry is loaded separately.
-const DATA_URLS=["MMR","IDN","CHN","MYS","KHM","LAO","VNM","BGD","PHL","THA","BRN","JPN","IND","TLS"].map(iso=>"./assets/map/"+iso+".geojson");
+const DATA_URLS=["MMR","IDN","CHN","MYS","KHM","LAO","VNM","BGD","PHL","THA","BRN","JPN","IND","TLS","SGP","TWN"].map(iso=>"./assets/map/"+iso+".geojson");
 const names={Srivijaya_Suvarnabhumi_Capital_Region:"Srivijaya Special Administrative Region",Malaya_Islands:"Malaya Islands Capital Region"};
 const display=key=>names[key]||String(key||"").replaceAll("_"," ");
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -20,7 +20,7 @@ export function mountMaharajaAtlas(map){
     crumb.innerHTML='<span>Maharaja Mandala</span>';
     const groups=new Map();
     layer.eachLayer(l=>{const key=getGroup(l.feature);if(key){if(!groups.has(key))groups.set(key,[]);groups.get(key).push(l)}});
-    status.textContent=groups.size+" Cakravalas mapped so far · 14-country coverage";
+    status.textContent=groups.size+" Cakravalas mapped so far · 16-country coverage";
     list.innerHTML=[...groups.keys()].sort((a,b)=>display(a).localeCompare(display(b))).map(key=>'<button type="button" data-group="'+esc(key)+'"><span>'+esc(display(key))+'</span><span aria-hidden="true">→</span></button>').join("");
     if(document.querySelector("#home")?.classList.contains("is-exploring"))focus(layer.getBounds());
   }
