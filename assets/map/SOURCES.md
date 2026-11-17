@@ -18,9 +18,12 @@ Published geometry comes from [geoBoundaries gbOpen](https://www.geoboundaries.o
 | Japan | JPN-ADM2-22064153 | OpenStreetMap, Wambacher | CC BY-SA 2.0 |
 | India | IND-ADM2-76128533 | Pathways Data Pvt. Ltd., lgdirectory.gov.in | ODbL 1.0 |
 | Timor-Leste | TLS-ADM2-22284137 | WHO, OCHA ROAP | CC BY 3.0 IGO |
+| Singapore | SGP-ADM1-49756563 | geoBoundaries gbOpen source metadata | ODbL 1.0 |
+| Taiwan | TWN-ADM1-90331920 | geoBoundaries gbOpen source metadata | ODbL 1.0 |
+| Hong Kong and Macau | CHN-ADM1-43563684 | National Administration of Surveying, Mapping and Geoinformation of China; Revolutionary GIS | ODC PDDL 1.0 |
 
-The current release maps 4,273 open-geometry units across 14 countries, covering all 29 SVG Cakravalas at different completeness levels. A feature's `matchConfidence` records the share of its area overlapping the assigned Cakravala in the local reconciliation. It is **not** a historical or legal claim to the boundary.
+The current release maps 4,301 open-geometry units across 16 country datasets, covering all 29 SVG Cakravalas at different completeness levels. A feature's `matchConfidence` records the share of its area overlapping the assigned Cakravala in the local reconciliation. It is **not** a historical or legal claim to the boundary.
 
-The source SVG contains 29 Cakravalas. Philippines uses ADM3, most other sources use ADM2; a number of SVG municipalities remain unmatched because names and administrative editions differ. Singapore, Taiwan, Hong Kong and Macau are individually named in the SVG and remain to be handled as distinct shapes. The extra Myanmar SVG label `Magyaw_Minbu-42` has no matching GADM unit and was excluded. The geoBoundaries `Yamethin` district overlaps both Northern and Southern Pagan classifications and was assigned to the largest overlap (63%); its division needs manual review.
+The source SVG contains 29 Cakravalas. Philippines uses ADM3, most other sources use ADM2; a number of SVG municipalities remain unmatched because names and administrative editions differ. Singapore and Taiwan have separate ADM1 geometry. Hong Kong and Macau have two separate ADM1 shapes; their 17 and two respective SVG subdistrict shapes await matching open district geometry. The extra Myanmar SVG label `Magyaw_Minbu-42` has no matching GADM unit and was excluded. The geoBoundaries `Yamethin` district overlaps both Northern and Southern Pagan classifications and was assigned to the largest overlap (63%); its division needs manual review.
 
 Display corrections: SVG `Srivijaya_Suvarnabhumi_Capital_Region` appears as **Srivijaya Special Administrative Region**, and `Malaya_Islands` appears as **Malaya Islands Capital Region**.
