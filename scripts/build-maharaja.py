@@ -6,7 +6,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from lxml import etree
-from shapely.geometry import mapping, shape
+from shapely.geometry import MultiPolygon, Polygon, mapping, shape
 from shapely.ops import unary_union
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,8 +47,9 @@ for pack in MANIFEST['worldPacks']:
 
 features=[]
 selected=defaultdict(list)
+world_by_code={f['properties']['country']:shape(f['geometry']) for f in world}
 for code in sorted(FULL):
-    polygons=[shape(f['geometry']) for f in world if f['properties']['country']==code]
+    polygons=[world_by_code[code]] if code in world_by_code else []
     if not polygons:
         raise RuntimeError('Missing ADM0: '+code)
     features.extend(polygons)
@@ -68,17 +69,34 @@ for code in sorted(PARTIAL):
         geom=shape(area['geometry'])
         if geom.is_empty or not geom.is_valid:
             geom=geom.buffer(0)
-        if geom.area and footprint.intersects(geom) and footprint.intersection(geom).area/geom.area >= .45:
+        p=area['properties']
+        adm1=p.get('adm1')
+        # Whole island groups must not be cut by the older SVG's mismatched
+        # district names. These codes are the ADM1 groups in this atlas.
+        complete_island=(
+            code=='IDN' and adm1 not in {'IDN_0031_V1','IDN_0032_V1','IDN_0033_V1','IDN_0034_V1'}
+            or code=='IND' and adm1 in {'IND_0001_V1','IND_0003_V1','IND_0004_V1',
+                'IND_0021_V1','IND_0022_V1','IND_0023_V1','IND_0024_V1','IND_0032_V1'}
+            or code=='BGD' and adm1=='BGD_0002_V1'
+        )
+        if complete_island or (geom.area and footprint.intersects(geom) and footprint.intersection(geom).area/geom.area >= .45):
             features.append(geom)
-            p=area['properties'];selected[code].append({'id':p['id'],'adm1':p.get('adm1'),'adm2':p.get('name')})
+            selected[code].append({'id':p['id'],'adm1':adm1,'adm2':p.get('name')})
 
 merged=unary_union(features)
 if not merged.is_valid:
     merged=merged.buffer(0)
+# Independent country and ADM2 simplification creates thin slivers at shared
+# borders. Close sub-kilometre seams on this display-only footprint.
+merged=merged.buffer(.008, join_style=2).buffer(-.008, join_style=2)
+# Remaining enclosed gaps are small artifacts between independently reduced
+# polygons, not intended exclusions from the Mandala.
+pieces=merged.geoms if isinstance(merged, MultiPolygon) else [merged]
+merged=MultiPolygon([Polygon(p.exterior,[ring for ring in p.interiors if Polygon(ring).area >= .03]) for p in pieces])
 # Keep coastlines detailed while removing microscopic ring artifacts.
 result={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':'Maharaja Mandala'},'geometry':mapping(merged)}]}
 with gzip.open(OUT/'boundary.geojson.gz','wt',compresslevel=9) as f:
     json.dump(result,f,separators=(',',':'))
-summary={'svgSource':SVG.name,'svgFrames':len(tree.getroot().xpath('./*[local-name()="g"]/*[local-name()="g"]')),'svgPathsParsed':len(rows),'fullAdm0':sorted(FULL),'partialAdm0':sorted(PARTIAL),'mapSelection':dict(selected),'note':'Partial ADM2: at least 45% planar overlap with previously SVG-matched regional geometry. SVG membership retains original names for audit. SVG underscores do not unambiguously delimit ADM1 and ADM2; the CSV retains the unsplit raw suffix.'}
+summary={'svgSource':SVG.name,'svgFrames':len(tree.getroot().xpath('./*[local-name()="g"]/*[local-name()="g"]')),'svgPathsParsed':len(rows),'fullAdm0':sorted(FULL),'partialAdm0':sorted(PARTIAL),'mapSelection':dict(selected),'note':'Whole Indonesian western/central island ADM1 groups, Andaman and northeast Indian ADM1 groups, and Chittagong ADM1 are included in full; other partial districts use at least 45% overlap. Display geometry closes narrow source seams by 0.008 degrees. SVG raw labels remain in CSV.'}
 (OUT/'membership.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 print('SVG',len(rows),'boundary parts',len(features),'partial counts',{c:len(selected[c]) for c in sorted(PARTIAL)},'bounds',merged.bounds)

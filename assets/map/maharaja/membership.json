@@ -71,6 +71,11 @@
         "adm2": "Cox's Bazar"
       },
       {
+        "id": "BGD_0002_0008_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Feni"
+      },
+      {
         "id": "BGD_0002_0009_V1",
         "adm1": "BGD_0002_V1",
         "adm2": "Noakhali"
@@ -420,6 +425,11 @@
         "adm2": "Cirebon"
       },
       {
+        "id": "IDN_0017_0009_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Kota Denpasar"
+      },
+      {
         "id": "IDN_0001_0007_V1",
         "adm1": "IDN_0001_V1",
         "adm2": "Aceh Barat"
@@ -468,6 +478,11 @@
         "id": "IDN_0029_0005_V1",
         "adm1": "IDN_0029_V1",
         "adm2": "Gorontalo Utara"
+      },
+      {
+        "id": "IDN_0001_0008_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Besar"
       },
       {
         "id": "IDN_0002_0027_V1",
@@ -528,6 +543,11 @@
         "id": "IDN_0013_0026_V1",
         "adm1": "IDN_0013_V1",
         "adm2": "Pekalongan"
+      },
+      {
+        "id": "IDN_0015_0004_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Tulungagung"
       },
       {
         "id": "IDN_0001_0003_V1",
@@ -710,6 +730,11 @@
         "adm2": "Rejang Lebong"
       },
       {
+        "id": "IDN_0023_0003_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Kutai Kartanegara"
+      },
+      {
         "id": "IDN_0022_0013_V1",
         "adm1": "IDN_0022_V1",
         "adm2": "Kota Banjar Baru"
@@ -723,6 +748,11 @@
         "id": "IDN_0004_0009_V1",
         "adm1": "IDN_0004_V1",
         "adm2": "Rokan Hilir"
+      },
+      {
+        "id": "IDN_0016_0002_V1",
+        "adm1": "IDN_0016_V1",
+        "adm2": "Lebak"
       },
       {
         "id": "IDN_0017_0008_V1",
@@ -840,6 +870,11 @@
         "adm2": "Kota Lubuklinggau"
       },
       {
+        "id": "IDN_0003_0020_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Danau"
+      },
+      {
         "id": "IDN_0002_0031_V1",
         "adm1": "IDN_0002_V1",
         "adm2": "Kota Binjai"
@@ -900,6 +935,11 @@
         "adm2": "Kota Sibolga"
       },
       {
+        "id": "IDN_0027_0023_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Kota Parepare"
+      },
+      {
         "id": "IDN_0025_0015_V1",
         "adm1": "IDN_0025_V1",
         "adm2": "Kota Kotamobagu"
@@ -918,6 +958,11 @@
         "id": "IDN_0002_0028_V1",
         "adm1": "IDN_0002_V1",
         "adm2": "Kota Pematang Siantar"
+      },
+      {
+        "id": "IDN_0023_0010_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Kota Bontang"
       },
       {
         "id": "IDN_0028_0007_V1",
@@ -963,6 +1008,11 @@
         "id": "IDN_0020_0013_V1",
         "adm1": "IDN_0020_V1",
         "adm2": "Kota Pontianak"
+      },
+      {
+        "id": "IDN_0008_0009_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Pesawaran"
       },
       {
         "id": "IDN_0013_0005_V1",
@@ -1025,6 +1075,11 @@
         "adm2": "Kotawaringin Barat"
       },
       {
+        "id": "IDN_0010_0001_V1",
+        "adm1": "IDN_0010_V1",
+        "adm2": "Karimun"
+      },
+      {
         "id": "IDN_0002_0019_V1",
         "adm1": "IDN_0002_V1",
         "adm2": "Batu Bara"
@@ -1043,6 +1098,11 @@
         "id": "IDN_0008_0015_V1",
         "adm1": "IDN_0008_V1",
         "adm2": "Kota Metro"
+      },
+      {
+        "id": "IDN_0027_0022_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Kota Makassar"
       },
       {
         "id": "IDN_0013_0032_V1",
@@ -1093,6 +1153,11 @@
         "id": "IDN_0013_0029_V1",
         "adm1": "IDN_0013_V1",
         "adm2": "Brebes"
+      },
+      {
+        "id": "IDN_0018_0005_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Dompu"
       },
       {
         "id": "IDN_0012_0005_V1",
@@ -1215,6 +1280,11 @@
         "adm2": "Sigi"
       },
       {
+        "id": "IDN_0029_0001_V1",
+        "adm1": "IDN_0029_V1",
+        "adm2": "Boalemo"
+      },
+      {
         "id": "IDN_0002_0005_V1",
         "adm1": "IDN_0002_V1",
         "adm2": "Tapanuli Utara"
@@ -1273,6 +1343,11 @@
         "id": "IDN_0012_0021_V1",
         "adm1": "IDN_0012_V1",
         "adm2": "Kota Bandung"
+      },
+      {
+        "id": "IDN_0025_0016_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Danau"
       },
       {
         "id": "IDN_0001_0018_V1",
@@ -1348,6 +1423,11 @@
         "id": "IDN_0007_0005_V1",
         "adm1": "IDN_0007_V1",
         "adm2": "Seluma"
+      },
+      {
+        "id": "IDN_0010_0006_V1",
+        "adm1": "IDN_0010_V1",
+        "adm2": "Kota Batam"
       },
       {
         "id": "IDN_0018_0004_V1",
@@ -1440,6 +1520,16 @@
         "adm2": "Pemalang"
       },
       {
+        "id": "IDN_0015_0003_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Trenggalek"
+      },
+      {
+        "id": "IDN_0015_0007_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Malang"
+      },
+      {
         "id": "IDN_0019_0012_V1",
         "adm1": "IDN_0019_V1",
         "adm2": "Ngada"
@@ -1470,6 +1560,16 @@
         "adm2": "Manggarai"
       },
       {
+        "id": "IDN_0019_0014_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Rote Ndao"
+      },
+      {
+        "id": "IDN_0019_0015_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Manggarai Barat"
+      },
+      {
         "id": "IDN_0019_0016_V1",
         "adm1": "IDN_0019_V1",
         "adm2": "Sumba Tengah"
@@ -1478,6 +1578,11 @@
         "id": "IDN_0019_0018_V1",
         "adm1": "IDN_0019_V1",
         "adm2": "Nagekeo"
+      },
+      {
+        "id": "IDN_0011_0001_V1",
+        "adm1": "IDN_0011_V1",
+        "adm2": "Kepulauan Seribu"
       },
       {
         "id": "IDN_0015_0026_V1",
@@ -1510,6 +1615,11 @@
         "adm2": "Flores Timur"
       },
       {
+        "id": "IDN_0001_0016_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Jaya"
+      },
+      {
         "id": "IDN_0026_0003_V1",
         "adm1": "IDN_0026_V1",
         "adm2": "Morowali"
@@ -1530,9 +1640,19 @@
         "adm2": "Berau"
       },
       {
+        "id": "IDN_0018_0003_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Lombok Timur"
+      },
+      {
         "id": "IDN_0013_0008_V1",
         "adm1": "IDN_0013_V1",
         "adm2": "Magelang"
+      },
+      {
+        "id": "IDN_0009_0002_V1",
+        "adm1": "IDN_0009_V1",
+        "adm2": "Belitung"
       },
       {
         "id": "IDN_0009_0003_V1",
@@ -1600,6 +1720,16 @@
         "adm2": "Parigi Moutong"
       },
       {
+        "id": "IDN_0026_0009_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Tojo Una-Una"
+      },
+      {
+        "id": "IDN_0026_0011_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Banggai Laut"
+      },
+      {
         "id": "IDN_0026_0012_V1",
         "adm1": "IDN_0026_V1",
         "adm2": "Morowali Utara"
@@ -1618,6 +1748,11 @@
         "id": "IDN_0027_0011_V1",
         "adm1": "IDN_0027_V1",
         "adm2": "Bone"
+      },
+      {
+        "id": "IDN_0003_0001_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Kepulauan Mentawai"
       },
       {
         "id": "IDN_0030_0003_V1",
@@ -1660,6 +1795,11 @@
         "adm2": "Kapuas Hulu"
       },
       {
+        "id": "IDN_0029_0002_V1",
+        "adm1": "IDN_0029_V1",
+        "adm2": "Gorontalo"
+      },
+      {
         "id": "IDN_0002_0034_V1",
         "adm1": "IDN_0002_V1",
         "adm2": "Danau Toba"
@@ -1673,6 +1813,11 @@
         "id": "IDN_0005_0007_V1",
         "adm1": "IDN_0005_V1",
         "adm2": "Tanjung Jabung Barat"
+      },
+      {
+        "id": "IDN_0016_0001_V1",
+        "adm1": "IDN_0016_V1",
+        "adm2": "Pandeglang"
       },
       {
         "id": "IDN_0028_0009_V1",
@@ -1728,6 +1873,11 @@
         "id": "IDN_0002_0020_V1",
         "adm1": "IDN_0002_V1",
         "adm2": "Padang Lawas Utara"
+      },
+      {
+        "id": "IDN_0017_0005_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Klungkung"
       },
       {
         "id": "IDN_0026_0002_V1",
@@ -1915,6 +2065,11 @@
         "adm2": "Nganjuk"
       },
       {
+        "id": "IDN_0015_0010_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Banyuwangi"
+      },
+      {
         "id": "IDN_0015_0025_V1",
         "adm1": "IDN_0015_V1",
         "adm2": "Gresik"
@@ -1925,14 +2080,34 @@
         "adm2": "Magetan"
       },
       {
+        "id": "IDN_0015_0005_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Blitar"
+      },
+      {
         "id": "IDN_0015_0012_V1",
         "adm1": "IDN_0015_V1",
         "adm2": "Situbondo"
       },
       {
+        "id": "IDN_0018_0006_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Bima"
+      },
+      {
         "id": "IDN_0017_0002_V1",
         "adm1": "IDN_0017_V1",
         "adm2": "Tabanan"
+      },
+      {
+        "id": "IDN_0018_0001_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Lombok Barat"
+      },
+      {
+        "id": "IDN_0019_0002_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Sumba Timur"
       },
       {
         "id": "IDN_0019_0010_V1",
@@ -1978,6 +2153,16 @@
         "id": "IDN_0025_0008_V1",
         "adm1": "IDN_0025_V1",
         "adm2": "Siau Tagulandang Biaro"
+      },
+      {
+        "id": "IDN_0025_0013_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Kota Bitung"
+      },
+      {
+        "id": "IDN_0026_0001_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Banggai Kepulauan"
       },
       {
         "id": "IDN_0026_0007_V1",
@@ -2090,6 +2275,11 @@
         "adm2": "Purworejo"
       },
       {
+        "id": "IDN_0015_0001_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Pacitan"
+      },
+      {
         "id": "IDN_0025_0011_V1",
         "adm1": "IDN_0025_V1",
         "adm2": "Bolaang Mongondow Timur"
@@ -2125,6 +2315,11 @@
         "adm2": "Pringsewu"
       },
       {
+        "id": "IDN_0010_0004_V1",
+        "adm1": "IDN_0010_V1",
+        "adm2": "Lingga"
+      },
+      {
         "id": "IDN_0004_0001_V1",
         "adm1": "IDN_0004_V1",
         "adm2": "Kuantan Singingi"
@@ -2158,6 +2353,11 @@
         "id": "IDN_0013_0033_V1",
         "adm1": "IDN_0013_V1",
         "adm2": "Kota Semarang"
+      },
+      {
+        "id": "IDN_0003_0002_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Pesisir Selatan"
       },
       {
         "id": "IDN_0021_0003_V1",
@@ -2198,6 +2398,11 @@
         "id": "IDN_0004_0003_V1",
         "adm1": "IDN_0004_V1",
         "adm2": "Indragiri Hilir"
+      },
+      {
+        "id": "IDN_0019_0003_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Kupang"
       },
       {
         "id": "IDN_0005_0005_V1",
@@ -2385,9 +2590,24 @@
         "adm2": "Lampung Barat"
       },
       {
+        "id": "IDN_0006_0018_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Danau"
+      },
+      {
         "id": "IDN_0008_0012_V1",
         "adm1": "IDN_0008_V1",
         "adm2": "Tulang Bawang Barat"
+      },
+      {
+        "id": "IDN_0008_0016_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Danau"
+      },
+      {
+        "id": "IDN_0015_0009_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Jember"
       },
       {
         "id": "IDN_0011_0005_V1",
@@ -2430,6 +2650,11 @@
         "adm2": "Kutai Timur"
       },
       {
+        "id": "IDN_0018_0002_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Lombok Tengah"
+      },
+      {
         "id": "IDN_0013_0017_V1",
         "adm1": "IDN_0013_V1",
         "adm2": "Rembang"
@@ -2450,12 +2675,47 @@
         "adm2": "Luwu Timur"
       },
       {
+        "id": "IDN_0027_0001_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Kepulauan Selayar"
+      },
+      {
         "id": "IDN_0028_0005_V1",
         "adm1": "IDN_0028_V1",
         "adm2": "Konawe Selatan"
       }
     ],
     "IND": [
+      {
+        "id": "IND_0004_0013_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Jorhat"
+      },
+      {
+        "id": "IND_0004_0014_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Kamrup Metro"
+      },
+      {
+        "id": "IND_0004_0015_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Kamrup Rural"
+      },
+      {
+        "id": "IND_0004_0016_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Karbi Anglong"
+      },
+      {
+        "id": "IND_0004_0017_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Karimganj"
+      },
+      {
+        "id": "IND_0001_0002_V1",
+        "adm1": "IND_0001_V1",
+        "adm2": "North & Middle Andaman"
+      },
       {
         "id": "IND_0032_0004_V1",
         "adm1": "IND_0032_V1",
@@ -2467,9 +2727,19 @@
         "adm2": "Peren"
       },
       {
+        "id": "IND_0022_0004_V1",
+        "adm1": "IND_0022_V1",
+        "adm2": "Ri Bhoi"
+      },
+      {
         "id": "IND_0023_0007_V1",
         "adm1": "IND_0023_V1",
         "adm2": "Saiha"
+      },
+      {
+        "id": "IND_0022_0007_V1",
+        "adm1": "IND_0022_V1",
+        "adm2": "West Khasi Hills"
       },
       {
         "id": "IND_0032_0008_V1",
@@ -2480,6 +2750,11 @@
         "id": "IND_0024_0010_V1",
         "adm1": "IND_0024_V1",
         "adm2": "Wokha"
+      },
+      {
+        "id": "IND_0004_0018_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Kokrajhar"
       },
       {
         "id": "IND_0023_0001_V1",
@@ -2497,9 +2772,44 @@
         "adm2": "Mon"
       },
       {
+        "id": "IND_0004_0005_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Chirang"
+      },
+      {
+        "id": "IND_0004_0003_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Bongaigaon"
+      },
+      {
+        "id": "IND_0004_0004_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Cachar"
+      },
+      {
+        "id": "IND_0022_0003_V1",
+        "adm1": "IND_0022_V1",
+        "adm2": "Jaintia Hills"
+      },
+      {
         "id": "IND_0021_0007_V1",
         "adm1": "IND_0021_V1",
         "adm2": "Tamenglong"
+      },
+      {
+        "id": "IND_0032_0005_V1",
+        "adm1": "IND_0032_V1",
+        "adm2": "Sepahijala"
+      },
+      {
+        "id": "IND_0004_0025_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Sonitpur"
+      },
+      {
+        "id": "IND_0022_0006_V1",
+        "adm1": "IND_0022_V1",
+        "adm2": "West Garo Hills"
       },
       {
         "id": "IND_0021_0003_V1",
@@ -2507,14 +2817,94 @@
         "adm2": "Churachandpur"
       },
       {
+        "id": "IND_0004_0006_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Darrang"
+      },
+      {
+        "id": "IND_0004_0008_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Dhuburi"
+      },
+      {
+        "id": "IND_0004_0007_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Dhemaji"
+      },
+      {
         "id": "IND_0024_0001_V1",
         "adm1": "IND_0024_V1",
         "adm2": "Dimapur"
       },
       {
+        "id": "IND_0004_0010_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Goalpara"
+      },
+      {
+        "id": "IND_0004_0012_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Hailakandi"
+      },
+      {
+        "id": "IND_0003_0006_V1",
+        "adm1": "IND_0003_V1",
+        "adm2": "Tirap"
+      },
+      {
+        "id": "IND_0022_0002_V1",
+        "adm1": "IND_0022_V1",
+        "adm2": "East Khasi Hills"
+      },
+      {
         "id": "IND_0032_0003_V1",
         "adm1": "IND_0032_V1",
         "adm2": "Khowai"
+      },
+      {
+        "id": "IND_0004_0019_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Lakhimpur"
+      },
+      {
+        "id": "IND_0003_0004_V1",
+        "adm1": "IND_0003_V1",
+        "adm2": "Lohit"
+      },
+      {
+        "id": "IND_0023_0004_V1",
+        "adm1": "IND_0023_V1",
+        "adm2": "Lawngtlai"
+      },
+      {
+        "id": "IND_0004_0023_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "North Cachar Hills"
+      },
+      {
+        "id": "IND_0004_0027_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Udalguri"
+      },
+      {
+        "id": "IND_0004_0020_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Marigaon"
+      },
+      {
+        "id": "IND_0004_0022_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Nalbari"
+      },
+      {
+        "id": "IND_0004_0001_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Baksa"
+      },
+      {
+        "id": "IND_0022_0005_V1",
+        "adm1": "IND_0022_V1",
+        "adm2": "South Garo Hills"
       },
       {
         "id": "IND_0021_0001_V1",
@@ -2542,6 +2932,16 @@
         "adm2": "Zunheboto"
       },
       {
+        "id": "IND_0003_0002_V1",
+        "adm1": "IND_0003_V1",
+        "adm2": "Changlang"
+      },
+      {
+        "id": "IND_0003_0003_V1",
+        "adm1": "IND_0003_V1",
+        "adm2": "East Siang"
+      },
+      {
         "id": "IND_0023_0008_V1",
         "adm1": "IND_0023_V1",
         "adm2": "Serchhip"
@@ -2565,6 +2965,21 @@
         "id": "IND_0024_0008_V1",
         "adm1": "IND_0024_V1",
         "adm2": "Phek"
+      },
+      {
+        "id": "IND_0004_0026_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Tinsukia"
+      },
+      {
+        "id": "IND_0003_0001_V1",
+        "adm1": "IND_0003_V1",
+        "adm2": "Anjaw"
+      },
+      {
+        "id": "IND_0003_0005_V1",
+        "adm1": "IND_0003_V1",
+        "adm2": "Lower Dibang Valley"
       },
       {
         "id": "IND_0021_0002_V1",
@@ -2602,14 +3017,49 @@
         "adm2": "Senapati"
       },
       {
+        "id": "IND_0004_0009_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Dibrugarh"
+      },
+      {
+        "id": "IND_0022_0001_V1",
+        "adm1": "IND_0022_V1",
+        "adm2": "East Garo Hills"
+      },
+      {
+        "id": "IND_0004_0002_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Barpeta"
+      },
+      {
         "id": "IND_0024_0004_V1",
         "adm1": "IND_0024_V1",
         "adm2": "Longleng"
       },
       {
+        "id": "IND_0004_0024_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Sibsagar"
+      },
+      {
+        "id": "IND_0001_0003_V1",
+        "adm1": "IND_0001_V1",
+        "adm2": "South Andaman"
+      },
+      {
+        "id": "IND_0004_0021_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Nagaon"
+      },
+      {
         "id": "IND_0021_0009_V1",
         "adm1": "IND_0021_V1",
         "adm2": "Ukhrul"
+      },
+      {
+        "id": "IND_0023_0002_V1",
+        "adm1": "IND_0023_V1",
+        "adm2": "Champhai"
       },
       {
         "id": "IND_0023_0003_V1",
@@ -2620,6 +3070,16 @@
         "id": "IND_0032_0002_V1",
         "adm1": "IND_0032_V1",
         "adm2": "Gomati"
+      },
+      {
+        "id": "IND_0004_0011_V1",
+        "adm1": "IND_0004_V1",
+        "adm2": "Golaghat"
+      },
+      {
+        "id": "IND_0001_0001_V1",
+        "adm1": "IND_0001_V1",
+        "adm2": "Nicobar"
       }
     ],
     "JPN": [
@@ -2855,5 +3315,5 @@
       }
     ]
   },
-  "note": "Partial ADM2: at least 45% planar overlap with previously SVG-matched regional geometry. SVG membership retains original names for audit. SVG underscores do not unambiguously delimit ADM1 and ADM2; the CSV retains the unsplit raw suffix."
+  "note": "Whole Indonesian western/central island ADM1 groups, Andaman and northeast Indian ADM1 groups, and Chittagong ADM1 are included in full; other partial districts use at least 45% overlap. Display geometry closes narrow source seams by 0.008 degrees. SVG raw labels remain in CSV."
 }
