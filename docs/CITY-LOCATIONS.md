@@ -58,4 +58,6 @@ Edit the city record in `assets/map/cities/maharaja.json` and keep `maharaja-loc
 
 ## Validation for the first release
 
-The 62 unique entries were checked against the supplied references and current map membership IDs. Module-level checks cover initial marker counts, the imperial-capital marker, the Jambi reference for Srivijaya, Cakravala and country filters, the toggle, and cleanup when navigating away. These checks use lightweight map/DOM doubles; they do not replace browser layout inspection. Syntax checks pass for both city and atlas modules. Browser visual verification remains a separate check.
+The 62 unique entries were checked against the supplied references and current map membership IDs. Module-level checks cover initial marker counts, the imperial-capital marker, the Jambi reference for Srivijaya, Cakravala and country filters, the toggle, and cleanup when navigating away. These checks use lightweight map/DOM doubles. Syntax checks pass for both city and atlas modules. Public-site browser checks on 17 November 2026 verified all 62 marker buttons, the Srivijaya popup with Jambi as its reference, the Malaya Islands filter showing Maharajapura and Natuna, and the Cities toggle hiding and restoring the markers.
+
+![Maharajapura and Natuna in the Malaya Islands city layer](images/maharaja-cities.jpg)
