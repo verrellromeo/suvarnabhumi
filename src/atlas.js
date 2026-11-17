@@ -1,5 +1,5 @@
 // Data-driven drill-down for the imperial atlas. Feature geometry is loaded separately.
-const DATA_URL="./assets/map/maharaja.geojson";
+const DATA_URLS=["MMR","IDN","CHN","MYS","KHM","LAO","VNM","BGD"].map(iso=>"./assets/map/"+iso+".geojson");
 const names={Srivijaya_Suvarnabhumi_Capital_Region:"Srivijaya Special Administrative Region",Malaya_Islands:"Malaya Islands Capital Region"};
 const display=key=>names[key]||String(key||"").replaceAll("_"," ");
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -20,7 +20,7 @@ export function mountMaharajaAtlas(map){
     crumb.innerHTML='<span>Maharaja Mandala</span>';
     const groups=new Map();
     layer.eachLayer(l=>{const key=getGroup(l.feature);if(key){if(!groups.has(key))groups.set(key,[]);groups.get(key).push(l)}});
-    status.textContent=groups.size+" Cakravalas in this Mandala";
+    status.textContent=groups.size+" Cakravalas mapped so far · eight-country coverage";
     list.innerHTML=[...groups.keys()].sort((a,b)=>display(a).localeCompare(display(b))).map(key=>'<button type="button" data-group="'+esc(key)+'"><span>'+esc(display(key))+'</span><span aria-hidden="true">→</span></button>').join("");
     if(document.querySelector("#home")?.classList.contains("is-exploring"))focus(layer.getBounds());
   }
@@ -41,7 +41,7 @@ export function mountMaharajaAtlas(map){
     const group=event.target.closest("[data-group]");if(group){showGroup(group.dataset.group);return}
     const area=event.target.closest("[data-area]");if(area){const l=byId.get(Number(area.dataset.area));if(l){focus(l.getBounds());l.openPopup()}}
   });
-  fetch(DATA_URL).then(r=>{if(!r.ok)throw Error("Geometry not published");return r.json()}).then(data=>{
+  Promise.all(DATA_URLS.map(url=>fetch(url).then(r=>{if(!r.ok)throw Error("Geometry not published: "+url);return r.json()}))).then(collections=>{\n    const data={type:"FeatureCollection",features:collections.flatMap(item=>item.features||[])};
     if(!alive)return;
     if(data.type!=="FeatureCollection"||!Array.isArray(data.features))throw Error("Invalid map data");
     layer=L.geoJSON(data,{style:()=>style(),onEachFeature:(feature,l)=>{
@@ -52,6 +52,6 @@ export function mountMaharajaAtlas(map){
       l.on("click",()=>{if(!document.querySelector("#home")?.classList.contains("is-exploring"))document.querySelector("#explore-map")?.click();showGroup(getGroup(feature));l.openPopup()});
     }}).addTo(map);
     showMandala();
-  }).catch(()=>{if(alive){status.textContent="Regional boundaries are being prepared.";list.innerHTML="";crumb.innerHTML=""}});
+  }).catch(()=>{if(alive){status.textContent="Regional boundaries could not be loaded. Please retry later.";list.innerHTML="";crumb.innerHTML=""}});
   return()=>{alive=false;root.remove();if(layer)map.removeLayer(layer)};
 }
