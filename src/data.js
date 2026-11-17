@@ -17,7 +17,7 @@ export const history = [
 ];
 // Expandable chronology template. Short event previews precede full canon articles.
 export const historyEras = [
-  {id:'pra-suvarnabhumi',date:'1017–1072',title:'Pra-Suvarnabhumi',summary:'From the royal massacre of 1017 to the dynastic alliances that prepared the Union of Suvarnabhumi.',events:[
+  {id:'pre-suvarnabhumi',date:'1017–1072',title:'Pre-Suvarnabhumi',summary:'From the royal massacre of 1017 to the dynastic alliances that prepared the Union of Suvarnabhumi.',events:[
     {date:'1017',title:'Chola Invasion',place:'Srivijaya / Palembang',body:'The Royal Massacre of 1017 destroys the old court without establishing permanent Chola rule. Suryaputradewa survives in exile, leaving a path toward dynastic restoration.'},
     {date:'1018',title:'Registry of Orphaned Houses',place:'Surviving port communities',body:'Local scribes, merchant elders and religious custodians record displaced dependants and disputed household claims. The emerging coalition supports protection through its commercial contacts.'},
     {date:'1017–1025',title:'Rise of Suryaputradewa',place:'The Srivijayan maritime network',body:'The exiled royal relative builds a coalition of merchants, surviving admirals and port communities. Ships, credit and local alliances make his return possible.'},
@@ -38,7 +38,7 @@ export const historyEras = [
     {date:'1061',title:'Conquest of Borneo',place:'Borneo',body:'The Borneo Mandala War brings key river and coastal authorities into the Nagara order. Political claims do not imply uniform direct control over the island interior.'},
     {date:'1062',title:'The Borneo Timber Standard',place:'Registered timber ports',body:'Procurement agreements distinguish suitable shipbuilding timber, accepted loads and paid purchases from tribute. River intermediaries remain essential to supply and enforcement.'},
     {date:'1065',title:'Council of Frontier Governors',place:'The Srivijayan court',body:'Dependent rulers, commanders and port representatives clarify negotiated tribute, service and reporting obligations. Consultation helps make the expanding order less dependent on personal commands.'},
-    {date:'1072',title:'Rise of Aryanagara Syailendra',place:'The Syailendra court',body:'The son of Suryaputradewa and the Song princess emerges as the dynastic successor. His rise shifts the narrative from the founder’s restoration toward an inheritable union.'},
+    {date:'1070',title:'Rise of Aryanagara Syailendra',place:'The Syailendra court',body:'The son of Suryaputradewa and the Song princess emerges as the dynastic successor. His rise shifts the narrative from the founder’s restoration toward an inheritable union.'},
     {date:'1072',title:'Royal Marriage of Syailendra–Thai',place:'Srivijaya and Tainagara',body:'Aryanagara marries into the royal house of Tainagara. The alliance binds maritime, Song and Thai frontier legitimacy before the Union of Suvarnabhumi.'}
   ]},
   {id:'first-union',date:'1072–1126',title:'First Union and Maritime Consolidation',events:[]},
