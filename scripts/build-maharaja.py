@@ -75,8 +75,8 @@ for code in sorted(PARTIAL):
         # district names. These codes are the ADM1 groups in this atlas.
         complete_island=(
             code=='IDN' and adm1 not in {'IDN_0031_V1','IDN_0032_V1','IDN_0033_V1','IDN_0034_V1'}
-            or code=='IND' and adm1 in {'IND_0001_V1','IND_0003_V1','IND_0004_V1',
-                'IND_0021_V1','IND_0022_V1','IND_0023_V1','IND_0024_V1','IND_0032_V1'}
+            or code=='IND' and adm1 in {'IND_0001_V1',
+                'IND_0021_V1','IND_0023_V1','IND_0024_V1','IND_0032_V1'}
             or code=='BGD' and adm1=='BGD_0002_V1'
         )
         if complete_island or (geom.area and footprint.intersects(geom) and footprint.intersection(geom).area/geom.area >= .45):
@@ -97,6 +97,6 @@ merged=MultiPolygon([Polygon(p.exterior,[ring for ring in p.interiors if Polygon
 result={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':'Maharaja Mandala'},'geometry':mapping(merged)}]}
 with gzip.open(OUT/'boundary.geojson.gz','wt',compresslevel=9) as f:
     json.dump(result,f,separators=(',',':'))
-summary={'svgSource':SVG.name,'svgFrames':len(tree.getroot().xpath('./*[local-name()="g"]/*[local-name()="g"]')),'svgPathsParsed':len(rows),'fullAdm0':sorted(FULL),'partialAdm0':sorted(PARTIAL),'mapSelection':dict(selected),'note':'Whole Indonesian western/central island ADM1 groups, Andaman and northeast Indian ADM1 groups, and Chittagong ADM1 are included in full; other partial districts use at least 45% overlap. Display geometry closes narrow source seams by 0.008 degrees. SVG raw labels remain in CSV.'}
+summary={'svgSource':SVG.name,'svgFrames':len(tree.getroot().xpath('./*[local-name()="g"]/*[local-name()="g"]')),'svgPathsParsed':len(rows),'fullAdm0':sorted(FULL),'partialAdm0':sorted(PARTIAL),'mapSelection':dict(selected),'note':'Whole Indonesian western/central island ADM1 groups, Andaman and SVG-covered northeast Indian ADM1 groups, and Chittagong ADM1 are included in full; other partial districts use at least 45% overlap. Display geometry closes narrow source seams by 0.008 degrees. SVG raw labels remain in CSV.'}
 (OUT/'membership.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 print('SVG',len(rows),'boundary parts',len(features),'partial counts',{c:len(selected[c]) for c in sorted(PARTIAL)},'bounds',merged.bounds)

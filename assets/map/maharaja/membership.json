@@ -2687,31 +2687,6 @@
     ],
     "IND": [
       {
-        "id": "IND_0004_0013_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Jorhat"
-      },
-      {
-        "id": "IND_0004_0014_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Kamrup Metro"
-      },
-      {
-        "id": "IND_0004_0015_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Kamrup Rural"
-      },
-      {
-        "id": "IND_0004_0016_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Karbi Anglong"
-      },
-      {
-        "id": "IND_0004_0017_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Karimganj"
-      },
-      {
         "id": "IND_0001_0002_V1",
         "adm1": "IND_0001_V1",
         "adm2": "North & Middle Andaman"
@@ -2727,19 +2702,9 @@
         "adm2": "Peren"
       },
       {
-        "id": "IND_0022_0004_V1",
-        "adm1": "IND_0022_V1",
-        "adm2": "Ri Bhoi"
-      },
-      {
         "id": "IND_0023_0007_V1",
         "adm1": "IND_0023_V1",
         "adm2": "Saiha"
-      },
-      {
-        "id": "IND_0022_0007_V1",
-        "adm1": "IND_0022_V1",
-        "adm2": "West Khasi Hills"
       },
       {
         "id": "IND_0032_0008_V1",
@@ -2750,11 +2715,6 @@
         "id": "IND_0024_0010_V1",
         "adm1": "IND_0024_V1",
         "adm2": "Wokha"
-      },
-      {
-        "id": "IND_0004_0018_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Kokrajhar"
       },
       {
         "id": "IND_0023_0001_V1",
@@ -2772,26 +2732,6 @@
         "adm2": "Mon"
       },
       {
-        "id": "IND_0004_0005_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Chirang"
-      },
-      {
-        "id": "IND_0004_0003_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Bongaigaon"
-      },
-      {
-        "id": "IND_0004_0004_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Cachar"
-      },
-      {
-        "id": "IND_0022_0003_V1",
-        "adm1": "IND_0022_V1",
-        "adm2": "Jaintia Hills"
-      },
-      {
         "id": "IND_0021_0007_V1",
         "adm1": "IND_0021_V1",
         "adm2": "Tamenglong"
@@ -2802,34 +2742,9 @@
         "adm2": "Sepahijala"
       },
       {
-        "id": "IND_0004_0025_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Sonitpur"
-      },
-      {
-        "id": "IND_0022_0006_V1",
-        "adm1": "IND_0022_V1",
-        "adm2": "West Garo Hills"
-      },
-      {
         "id": "IND_0021_0003_V1",
         "adm1": "IND_0021_V1",
         "adm2": "Churachandpur"
-      },
-      {
-        "id": "IND_0004_0006_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Darrang"
-      },
-      {
-        "id": "IND_0004_0008_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Dhuburi"
-      },
-      {
-        "id": "IND_0004_0007_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Dhemaji"
       },
       {
         "id": "IND_0024_0001_V1",
@@ -2837,74 +2752,14 @@
         "adm2": "Dimapur"
       },
       {
-        "id": "IND_0004_0010_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Goalpara"
-      },
-      {
-        "id": "IND_0004_0012_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Hailakandi"
-      },
-      {
-        "id": "IND_0003_0006_V1",
-        "adm1": "IND_0003_V1",
-        "adm2": "Tirap"
-      },
-      {
-        "id": "IND_0022_0002_V1",
-        "adm1": "IND_0022_V1",
-        "adm2": "East Khasi Hills"
-      },
-      {
         "id": "IND_0032_0003_V1",
         "adm1": "IND_0032_V1",
         "adm2": "Khowai"
       },
       {
-        "id": "IND_0004_0019_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Lakhimpur"
-      },
-      {
-        "id": "IND_0003_0004_V1",
-        "adm1": "IND_0003_V1",
-        "adm2": "Lohit"
-      },
-      {
         "id": "IND_0023_0004_V1",
         "adm1": "IND_0023_V1",
         "adm2": "Lawngtlai"
-      },
-      {
-        "id": "IND_0004_0023_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "North Cachar Hills"
-      },
-      {
-        "id": "IND_0004_0027_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Udalguri"
-      },
-      {
-        "id": "IND_0004_0020_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Marigaon"
-      },
-      {
-        "id": "IND_0004_0022_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Nalbari"
-      },
-      {
-        "id": "IND_0004_0001_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Baksa"
-      },
-      {
-        "id": "IND_0022_0005_V1",
-        "adm1": "IND_0022_V1",
-        "adm2": "South Garo Hills"
       },
       {
         "id": "IND_0021_0001_V1",
@@ -2932,16 +2787,6 @@
         "adm2": "Zunheboto"
       },
       {
-        "id": "IND_0003_0002_V1",
-        "adm1": "IND_0003_V1",
-        "adm2": "Changlang"
-      },
-      {
-        "id": "IND_0003_0003_V1",
-        "adm1": "IND_0003_V1",
-        "adm2": "East Siang"
-      },
-      {
         "id": "IND_0023_0008_V1",
         "adm1": "IND_0023_V1",
         "adm2": "Serchhip"
@@ -2965,21 +2810,6 @@
         "id": "IND_0024_0008_V1",
         "adm1": "IND_0024_V1",
         "adm2": "Phek"
-      },
-      {
-        "id": "IND_0004_0026_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Tinsukia"
-      },
-      {
-        "id": "IND_0003_0001_V1",
-        "adm1": "IND_0003_V1",
-        "adm2": "Anjaw"
-      },
-      {
-        "id": "IND_0003_0005_V1",
-        "adm1": "IND_0003_V1",
-        "adm2": "Lower Dibang Valley"
       },
       {
         "id": "IND_0021_0002_V1",
@@ -3017,39 +2847,14 @@
         "adm2": "Senapati"
       },
       {
-        "id": "IND_0004_0009_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Dibrugarh"
-      },
-      {
-        "id": "IND_0022_0001_V1",
-        "adm1": "IND_0022_V1",
-        "adm2": "East Garo Hills"
-      },
-      {
-        "id": "IND_0004_0002_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Barpeta"
-      },
-      {
         "id": "IND_0024_0004_V1",
         "adm1": "IND_0024_V1",
         "adm2": "Longleng"
       },
       {
-        "id": "IND_0004_0024_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Sibsagar"
-      },
-      {
         "id": "IND_0001_0003_V1",
         "adm1": "IND_0001_V1",
         "adm2": "South Andaman"
-      },
-      {
-        "id": "IND_0004_0021_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Nagaon"
       },
       {
         "id": "IND_0021_0009_V1",
@@ -3070,11 +2875,6 @@
         "id": "IND_0032_0002_V1",
         "adm1": "IND_0032_V1",
         "adm2": "Gomati"
-      },
-      {
-        "id": "IND_0004_0011_V1",
-        "adm1": "IND_0004_V1",
-        "adm2": "Golaghat"
       },
       {
         "id": "IND_0001_0001_V1",
@@ -3315,5 +3115,5 @@
       }
     ]
   },
-  "note": "Whole Indonesian western/central island ADM1 groups, Andaman and northeast Indian ADM1 groups, and Chittagong ADM1 are included in full; other partial districts use at least 45% overlap. Display geometry closes narrow source seams by 0.008 degrees. SVG raw labels remain in CSV."
+  "note": "Whole Indonesian western/central island ADM1 groups, Andaman and SVG-covered northeast Indian ADM1 groups, and Chittagong ADM1 are included in full; other partial districts use at least 45% overlap. Display geometry closes narrow source seams by 0.008 degrees. SVG raw labels remain in CSV."
 }
