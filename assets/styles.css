@@ -206,3 +206,5 @@ body:has(.history-scroll) .site-nav a[aria-current=page]{background:var(--navy2)
 .scroll-year{font-size:clamp(65px,7.7vw,118px);min-width:0;}
 .scroll-year--range{font-size:clamp(48px,5.4vw,82px);min-width:0;letter-spacing:-.055em;}
 @media(max-width:1000px) and (min-width:651px){.scroll-year--range{font-size:54px;min-width:0}}
+
+.scroll-event--dark .scroll-prose h3{color:var(--paper)}
