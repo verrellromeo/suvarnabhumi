@@ -1,0 +1,138 @@
+{
+  "IDN_0011_0001_V1": {
+    "name": "Kepulauan Seribu",
+    "cakravala": "Galuh"
+  },
+  "IDN_0010_0006_V1": {
+    "name": "Kota Batam",
+    "cakravala": "Malaya_Islands"
+  },
+  "IDN_0026_0001_V1": {
+    "name": "Banggai Kepulauan",
+    "cakravala": "Northern_Sakanusa"
+  },
+  "IDN_0026_0011_V1": {
+    "name": "Banggai Laut",
+    "cakravala": "Northern_Sakanusa"
+  },
+  "IDN_0019_0014_V1": {
+    "name": "Rote Ndao",
+    "cakravala": "Nusa_Islands"
+  },
+  "IDN_0010_0001_V1": {
+    "name": "Karimun",
+    "cakravala": "Malaya_Islands"
+  },
+  "IDN_0003_0001_V1": {
+    "name": "Kepulauan Mentawai",
+    "cakravala": "Samuderanagara"
+  },
+  "IDN_0027_0001_V1": {
+    "name": "Kepulauan Selayar",
+    "cakravala": "Southern_Sakanusa"
+  },
+  "IDN_0010_0004_V1": {
+    "name": "Lingga",
+    "cakravala": "Malaya_Islands"
+  },
+  "PHL.53.2_1": {
+    "name": "Aleosan",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.53.3_1": {
+    "name": "Antipas",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.72.6_1": {
+    "name": "Kalamansig",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.67.3_1": {
+    "name": "Kiamba",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.53.8_1": {
+    "name": "KidapawanCity",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.53.9_1": {
+    "name": "Libungan",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.53.13_1": {
+    "name": "Matalam",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.72.10_1": {
+    "name": "Palimbang",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.73.15_1": {
+    "name": "Siasi",
+    "cakravala": "Butuan_Sulu_Islands"
+  },
+  "PHL.64.1_1": {
+    "name": "Angono",
+    "cakravala": "Tondo"
+  },
+  "PHL.8.1_1": {
+    "name": "Baler",
+    "cakravala": "Tondo"
+  },
+  "PHL.64.4_1": {
+    "name": "Binangonan",
+    "cakravala": "Tondo"
+  },
+  "PHL.64.5_1": {
+    "name": "Cainta",
+    "cakravala": "Tondo"
+  },
+  "PHL.64.6_1": {
+    "name": "Cardona",
+    "cakravala": "Tondo"
+  },
+  "PHL.8.4_1": {
+    "name": "Dinalungan",
+    "cakravala": "Tondo"
+  },
+  "PHL.64.13_1": {
+    "name": "Taytay",
+    "cakravala": "Tondo"
+  },
+  "PHL.64.14_1": {
+    "name": "Teresa",
+    "cakravala": "Tondo"
+  },
+  "THA_0069_0003_V1": {
+    "name": "Khlong Yai",
+    "cakravala": "Khmer"
+  },
+  "TLS_0005_0001_V1": {
+    "name": "Fato Lulik",
+    "cakravala": "Nusa_Islands"
+  },
+  "TLS_0005_0005_V1": {
+    "name": "Maukatar",
+    "cakravala": "Nusa_Islands"
+  },
+  "TLS_0006_0005_V1": {
+    "name": "Nein Feto",
+    "cakravala": "Nusa_Islands"
+  },
+  "TLS_0012_0003_V1": {
+    "name": "Pante Makasar A",
+    "cakravala": "Nusa_Islands"
+  },
+  "TLS_0012_0004_V1": {
+    "name": "Pante Makasar B",
+    "cakravala": "Nusa_Islands"
+  },
+  "VNM_0002_0002_V1": {
+    "name": "Con Dao",
+    "cakravala": "Champa"
+  },
+  "VNM_0026_0003_V1": {
+    "name": "Cat Hai",
+    "cakravala": "Dai_Viet"
+  }
+}

@@ -25,6 +25,7 @@ svg_names = defaultdict(list)
 for item in svg:
     svg_names[(item['adm0_code'], item['cakravala_frame'])].append(item)
 
+confirmed = json.loads((MAP / 'maharaja/confirmed-cakravala.json').read_text())
 records = []
 for code in sorted(membership['mapSelection']):
     selection = membership['mapSelection'][code]
@@ -86,9 +87,13 @@ for code in sorted(membership['mapSelection']):
                 status = 'no_svg_overlap_nearest_cakravala_review'
                 nearest = int(tree.nearest(geom))
                 svg_label = region[nearest]['properties']['label']
+            confirmation = confirmed.get(p['id'])
+            if confirmation:
+                group = confirmation['cakravala']
             records.append((code, entry['name'], p.get('adm1') or '', p['id'], name,
                             group, status, svg_label, f'{min(ratio, 1):.4f}',
-                            f'{nearest_distance:.4f}'))
+                            f'{nearest_distance:.4f}',
+                            'user_confirmed' if confirmation else 'svg_derived'))
 
 records.sort(key=lambda row: (row[0], row[5], row[4], row[3]))
 with OUT.open('w', newline='', encoding='utf-8') as file:
@@ -96,7 +101,7 @@ with OUT.open('w', newline='', encoding='utf-8') as file:
     writer.writerow(['adm0_code', 'country_name_in_web', 'adm1_id', 'adm2_id',
                      'adm2_name_in_web', 'cakravala_svg_frame', 'svg_name_status',
                      'svg_reference_label', 'cakravala_overlap_fraction',
-                     'nearest_svg_distance_degrees'])
+                     'nearest_svg_distance_degrees', 'cakravala_assignment_status'])
     writer.writerows(records)
 print('ADM2 rows:', len(records))
 print('No SVG overlap, nearest frame for review:', sum(row[6] == 'no_svg_overlap_nearest_cakravala_review' for row in records))
