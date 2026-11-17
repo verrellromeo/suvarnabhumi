@@ -22,7 +22,7 @@ export function mountMaharajaAtlas(map){
     layer.eachLayer(l=>{const key=getGroup(l.feature);if(key){if(!groups.has(key))groups.set(key,[]);groups.get(key).push(l)}});
     status.textContent=groups.size+" Cakravalas in this Mandala";
     list.innerHTML=[...groups.keys()].sort((a,b)=>display(a).localeCompare(display(b))).map(key=>'<button type="button" data-group="'+esc(key)+'"><span>'+esc(display(key))+'</span><span aria-hidden="true">→</span></button>').join("");
-    focus(layer.getBounds());
+    if(document.querySelector("#home")?.classList.contains("is-exploring"))focus(layer.getBounds());
   }
   function showGroup(key){
     selected=key;
