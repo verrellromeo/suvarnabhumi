@@ -1,0 +1,2859 @@
+{
+  "svgSource": "Southeast Asia (Maharaja Mandala)(5).svg",
+  "svgFrames": 29,
+  "svgPathsParsed": 4440,
+  "fullAdm0": [
+    "BRN",
+    "HKG",
+    "KHM",
+    "LAO",
+    "MAC",
+    "MMR",
+    "MYS",
+    "PHL",
+    "SGP",
+    "THA",
+    "TLS",
+    "TWN",
+    "VNM"
+  ],
+  "partialAdm0": [
+    "BGD",
+    "CHN",
+    "IDN",
+    "IND",
+    "JPN"
+  ],
+  "mapSelection": {
+    "BRN": [
+      "ADM0: entire entity"
+    ],
+    "HKG": [
+      "ADM0: entire entity"
+    ],
+    "KHM": [
+      "ADM0: entire entity"
+    ],
+    "LAO": [
+      "ADM0: entire entity"
+    ],
+    "MAC": [
+      "ADM0: entire entity"
+    ],
+    "MMR": [
+      "ADM0: entire entity"
+    ],
+    "MYS": [
+      "ADM0: entire entity"
+    ],
+    "PHL": [
+      "ADM0: entire entity"
+    ],
+    "SGP": [
+      "ADM0: entire entity"
+    ],
+    "THA": [
+      "ADM0: entire entity"
+    ],
+    "TLS": [
+      "ADM0: entire entity"
+    ],
+    "TWN": [
+      "ADM0: entire entity"
+    ],
+    "VNM": [
+      "ADM0: entire entity"
+    ],
+    "BGD": [
+      {
+        "id": "BGD_0002_0006_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Cox's Bazar"
+      },
+      {
+        "id": "BGD_0002_0009_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Noakhali"
+      },
+      {
+        "id": "BGD_0002_0011_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Chandpur"
+      },
+      {
+        "id": "BGD_0002_0004_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Khagrachhari"
+      },
+      {
+        "id": "BGD_0002_0001_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Bandarban"
+      },
+      {
+        "id": "BGD_0002_0003_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Comilla"
+      },
+      {
+        "id": "BGD_0002_0002_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Brahamanbaria"
+      },
+      {
+        "id": "BGD_0002_0007_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Chittagong"
+      },
+      {
+        "id": "BGD_0002_0005_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Rangamati"
+      },
+      {
+        "id": "BGD_0002_0010_V1",
+        "adm1": "BGD_0002_V1",
+        "adm2": "Lakshmipur"
+      }
+    ],
+    "CHN": [
+      {
+        "id": "CHN_0006_0012_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Meizhou"
+      },
+      {
+        "id": "CHN_0030_0002_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Qujing"
+      },
+      {
+        "id": "CHN_0007_0008_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Guigang"
+      },
+      {
+        "id": "CHN_0006_0002_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Shaoguan"
+      },
+      {
+        "id": "CHN_0006_0020_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Jieyang"
+      },
+      {
+        "id": "CHN_0030_0003_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Yuxi"
+      },
+      {
+        "id": "CHN_0006_0009_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Maoming"
+      },
+      {
+        "id": "CHN_0007_0012_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Hezhou"
+      },
+      {
+        "id": "CHN_0006_0017_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Dongguan"
+      },
+      {
+        "id": "CHN_0007_0003_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Guilin"
+      },
+      {
+        "id": "CHN_0030_0009_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Xishuangbanna Dai"
+      },
+      {
+        "id": "CHN_0006_0019_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Chaozhou"
+      },
+      {
+        "id": "CHN_0007_0009_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Yulin"
+      },
+      {
+        "id": "CHN_0006_0016_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Qingyuan"
+      },
+      {
+        "id": "CHN_0007_0001_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Nanning"
+      },
+      {
+        "id": "CHN_0007_0002_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Liuzhou"
+      },
+      {
+        "id": "CHN_0030_0013_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Lijiang"
+      },
+      {
+        "id": "CHN_0006_0011_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Huizhou"
+      },
+      {
+        "id": "CHN_0006_0005_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Shantou"
+      },
+      {
+        "id": "CHN_0009_0003_V1",
+        "adm1": "CHN_0009_V1",
+        "adm2": "Sanya"
+      },
+      {
+        "id": "CHN_0006_0013_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Shanwei"
+      },
+      {
+        "id": "CHN_0030_0015_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Dêqên Tibetan"
+      },
+      {
+        "id": "CHN_0006_0021_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Yunfu"
+      },
+      {
+        "id": "CHN_0007_0011_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Laibin"
+      },
+      {
+        "id": "CHN_0006_0001_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Guangzhou"
+      },
+      {
+        "id": "CHN_0007_0007_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Qinzhou"
+      },
+      {
+        "id": "CHN_0006_0014_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Heyuan"
+      },
+      {
+        "id": "CHN_0030_0006_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Honghe Hani And Yi"
+      },
+      {
+        "id": "CHN_0030_0008_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Pu'Er"
+      },
+      {
+        "id": "CHN_0030_0014_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Nujiang Lisu"
+      },
+      {
+        "id": "CHN_0030_0007_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Wenshan Zhuang And Miao"
+      },
+      {
+        "id": "CHN_0007_0013_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Baise"
+      },
+      {
+        "id": "CHN_0030_0011_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Baoshan"
+      },
+      {
+        "id": "CHN_0006_0004_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Zhuhai"
+      },
+      {
+        "id": "CHN_0007_0005_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Beihai"
+      },
+      {
+        "id": "CHN_0009_0001_V1",
+        "adm1": "CHN_0009_V1",
+        "adm2": "Hainan"
+      },
+      {
+        "id": "CHN_0007_0006_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Fangchenggang"
+      },
+      {
+        "id": "CHN_0006_0010_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Zhaoqing"
+      },
+      {
+        "id": "CHN_0006_0007_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Jiangmen"
+      },
+      {
+        "id": "CHN_0030_0012_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Dehong Dai And Jingpo"
+      },
+      {
+        "id": "CHN_0006_0003_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Shenzhen"
+      },
+      {
+        "id": "CHN_0006_0008_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Zhanjiang"
+      },
+      {
+        "id": "CHN_0006_0006_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Foshan"
+      },
+      {
+        "id": "CHN_0009_0002_V1",
+        "adm1": "CHN_0009_V1",
+        "adm2": "Haikou"
+      },
+      {
+        "id": "CHN_0030_0010_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Dali Bai"
+      },
+      {
+        "id": "CHN_0030_0001_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Kunming"
+      },
+      {
+        "id": "CHN_0030_0005_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Chuxiong Yi"
+      },
+      {
+        "id": "CHN_0006_0018_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Zhongshan"
+      },
+      {
+        "id": "CHN_0007_0004_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Wuzhou"
+      },
+      {
+        "id": "CHN_0007_0014_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Hechi"
+      },
+      {
+        "id": "CHN_0007_0010_V1",
+        "adm1": "CHN_0007_V1",
+        "adm2": "Chongzuo"
+      },
+      {
+        "id": "CHN_0030_0016_V1",
+        "adm1": "CHN_0030_V1",
+        "adm2": "Lincang"
+      },
+      {
+        "id": "CHN_0006_0015_V1",
+        "adm1": "CHN_0006_V1",
+        "adm2": "Yangjiang"
+      }
+    ],
+    "IDN": [
+      {
+        "id": "IDN_0013_0023_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Temanggung"
+      },
+      {
+        "id": "IDN_0027_0013_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Wajo"
+      },
+      {
+        "id": "IDN_0012_0010_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Majalengka"
+      },
+      {
+        "id": "IDN_0012_0014_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Purwakarta"
+      },
+      {
+        "id": "IDN_0012_0015_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Karawang"
+      },
+      {
+        "id": "IDN_0026_0013_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Kota Palu"
+      },
+      {
+        "id": "IDN_0012_0009_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Cirebon"
+      },
+      {
+        "id": "IDN_0001_0007_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Barat"
+      },
+      {
+        "id": "IDN_0022_0011_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Balangan"
+      },
+      {
+        "id": "IDN_0001_0012_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Barat Daya"
+      },
+      {
+        "id": "IDN_0007_0007_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Lebong"
+      },
+      {
+        "id": "IDN_0022_0005_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Tapin"
+      },
+      {
+        "id": "IDN_0011_0002_V1",
+        "adm1": "IDN_0011_V1",
+        "adm2": "Kota Jakarta Selatan"
+      },
+      {
+        "id": "IDN_0007_0006_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Mukomuko"
+      },
+      {
+        "id": "IDN_0016_0007_V1",
+        "adm1": "IDN_0016_V1",
+        "adm2": "Kota Serang"
+      },
+      {
+        "id": "IDN_0016_0008_V1",
+        "adm1": "IDN_0016_V1",
+        "adm2": "Kota Tangerang Selatan"
+      },
+      {
+        "id": "IDN_0029_0005_V1",
+        "adm1": "IDN_0029_V1",
+        "adm2": "Gorontalo Utara"
+      },
+      {
+        "id": "IDN_0002_0027_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Kota Tanjung Balai"
+      },
+      {
+        "id": "IDN_0025_0012_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Kota Manado"
+      },
+      {
+        "id": "IDN_0015_0035_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Mojokerto"
+      },
+      {
+        "id": "IDN_0021_0010_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Pulang Pisau"
+      },
+      {
+        "id": "IDN_0027_0016_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Enrekang"
+      },
+      {
+        "id": "IDN_0001_0017_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Bener Meriah"
+      },
+      {
+        "id": "IDN_0004_0008_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Bengkalis"
+      },
+      {
+        "id": "IDN_0019_0007_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Alor"
+      },
+      {
+        "id": "IDN_0019_0008_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Lembata"
+      },
+      {
+        "id": "IDN_0019_0001_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Sumba Barat"
+      },
+      {
+        "id": "IDN_0012_0016_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Bekasi"
+      },
+      {
+        "id": "IDN_0013_0026_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Pekalongan"
+      },
+      {
+        "id": "IDN_0001_0003_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Selatan"
+      },
+      {
+        "id": "IDN_0021_0002_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Kotawaringin Timur"
+      },
+      {
+        "id": "IDN_0012_0012_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Indramayu"
+      },
+      {
+        "id": "IDN_0012_0013_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Subang"
+      },
+      {
+        "id": "IDN_0014_0003_V1",
+        "adm1": "IDN_0014_V1",
+        "adm2": "Gunung Kidul"
+      },
+      {
+        "id": "IDN_0014_0004_V1",
+        "adm1": "IDN_0014_V1",
+        "adm2": "Sleman"
+      },
+      {
+        "id": "IDN_0012_0019_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Bogor"
+      },
+      {
+        "id": "IDN_0023_0006_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Penajam Paser Utara"
+      },
+      {
+        "id": "IDN_0006_0013_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Musi Rawas Utara"
+      },
+      {
+        "id": "IDN_0008_0011_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Mesuji"
+      },
+      {
+        "id": "IDN_0008_0013_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Pesisir Barat"
+      },
+      {
+        "id": "IDN_0019_0019_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Manggarai Timur"
+      },
+      {
+        "id": "IDN_0012_0027_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Banjar"
+      },
+      {
+        "id": "IDN_0001_0014_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Tamiang"
+      },
+      {
+        "id": "IDN_0013_0019_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kudus"
+      },
+      {
+        "id": "IDN_0006_0012_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Penukal Abab Lematang Ilir"
+      },
+      {
+        "id": "IDN_0013_0001_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Cilacap"
+      },
+      {
+        "id": "IDN_0013_0035_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kota Tegal"
+      },
+      {
+        "id": "IDN_0021_0005_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Barito Utara"
+      },
+      {
+        "id": "IDN_0019_0005_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Timor Tengah Utara"
+      },
+      {
+        "id": "IDN_0015_0021_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Ngawi"
+      },
+      {
+        "id": "IDN_0009_0005_V1",
+        "adm1": "IDN_0009_V1",
+        "adm2": "Bangka Selatan"
+      },
+      {
+        "id": "IDN_0028_0012_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Konawe Kepulauan"
+      },
+      {
+        "id": "IDN_0005_0008_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Tebo"
+      },
+      {
+        "id": "IDN_0018_0009_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Kota Mataram"
+      },
+      {
+        "id": "IDN_0022_0006_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Hulu Sungai Selatan"
+      },
+      {
+        "id": "IDN_0021_0007_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Lamandau"
+      },
+      {
+        "id": "IDN_0028_0016_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Kota Kendari"
+      },
+      {
+        "id": "IDN_0002_0029_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Kota Tebing Tinggi"
+      },
+      {
+        "id": "IDN_0014_0001_V1",
+        "adm1": "IDN_0014_V1",
+        "adm2": "Kulon Progo"
+      },
+      {
+        "id": "IDN_0021_0006_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Sukamara"
+      },
+      {
+        "id": "IDN_0013_0037_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Hutan"
+      },
+      {
+        "id": "IDN_0006_0016_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Kota Pagar Alam"
+      },
+      {
+        "id": "IDN_0015_0033_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Probolinggo"
+      },
+      {
+        "id": "IDN_0002_0025_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Nias Barat"
+      },
+      {
+        "id": "IDN_0007_0002_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Rejang Lebong"
+      },
+      {
+        "id": "IDN_0022_0013_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Kota Banjar Baru"
+      },
+      {
+        "id": "IDN_0012_0006_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Tasikmalaya"
+      },
+      {
+        "id": "IDN_0004_0009_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Rokan Hilir"
+      },
+      {
+        "id": "IDN_0017_0008_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Buleleng"
+      },
+      {
+        "id": "IDN_0019_0017_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Sumba Barat Daya"
+      },
+      {
+        "id": "IDN_0010_0003_V1",
+        "adm1": "IDN_0010_V1",
+        "adm2": "Natuna"
+      },
+      {
+        "id": "IDN_0021_0012_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Barito Timur"
+      },
+      {
+        "id": "IDN_0005_0006_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Tanjung Jabung Timur"
+      },
+      {
+        "id": "IDN_0001_0020_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Kota Sabang"
+      },
+      {
+        "id": "IDN_0015_0036_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Madiun"
+      },
+      {
+        "id": "IDN_0014_0005_V1",
+        "adm1": "IDN_0014_V1",
+        "adm2": "Kota Yogyakarta"
+      },
+      {
+        "id": "IDN_0028_0017_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Kota Baubau"
+      },
+      {
+        "id": "IDN_0015_0031_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Blitar"
+      },
+      {
+        "id": "IDN_0009_0007_V1",
+        "adm1": "IDN_0009_V1",
+        "adm2": "Kota Pangkal Pinang"
+      },
+      {
+        "id": "IDN_0005_0011_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Kota Sungai Penuh"
+      },
+      {
+        "id": "IDN_0022_0007_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Hulu Sungai Tengah"
+      },
+      {
+        "id": "IDN_0004_0011_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Kota Pekanbaru"
+      },
+      {
+        "id": "IDN_0001_0021_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Kota Langsa"
+      },
+      {
+        "id": "IDN_0019_0022_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Kota Kupang"
+      },
+      {
+        "id": "IDN_0023_0008_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Kota Balikpapan"
+      },
+      {
+        "id": "IDN_0005_0002_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Merangin"
+      },
+      {
+        "id": "IDN_0016_0005_V1",
+        "adm1": "IDN_0016_V1",
+        "adm2": "Kota Tangerang"
+      },
+      {
+        "id": "IDN_0021_0011_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Gunung Mas"
+      },
+      {
+        "id": "IDN_0002_0032_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Kota Padangsidimpuan"
+      },
+      {
+        "id": "IDN_0007_0009_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Bengkulu Tengah"
+      },
+      {
+        "id": "IDN_0006_0017_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Kota Lubuklinggau"
+      },
+      {
+        "id": "IDN_0002_0031_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Kota Binjai"
+      },
+      {
+        "id": "IDN_0006_0014_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Kota Palembang"
+      },
+      {
+        "id": "IDN_0025_0014_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Kota Tomohon"
+      },
+      {
+        "id": "IDN_0013_0031_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kota Surakarta"
+      },
+      {
+        "id": "IDN_0028_0010_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Konawe Utara"
+      },
+      {
+        "id": "IDN_0020_0014_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Kota Singkawang"
+      },
+      {
+        "id": "IDN_0015_0022_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Bojonegoro"
+      },
+      {
+        "id": "IDN_0002_0016_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Pakpak Bharat"
+      },
+      {
+        "id": "IDN_0021_0004_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Barito Selatan"
+      },
+      {
+        "id": "IDN_0003_0019_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Kota Pariaman"
+      },
+      {
+        "id": "IDN_0015_0037_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Surabaya"
+      },
+      {
+        "id": "IDN_0002_0026_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Kota Sibolga"
+      },
+      {
+        "id": "IDN_0025_0015_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Kota Kotamobagu"
+      },
+      {
+        "id": "IDN_0002_0033_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Kota Gunungsitoli"
+      },
+      {
+        "id": "IDN_0002_0022_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Labuhan Batu Selatan"
+      },
+      {
+        "id": "IDN_0002_0028_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Kota Pematang Siantar"
+      },
+      {
+        "id": "IDN_0028_0007_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Wakatobi"
+      },
+      {
+        "id": "IDN_0022_0008_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Hulu Sungai Utara"
+      },
+      {
+        "id": "IDN_0027_0002_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Bulukumba"
+      },
+      {
+        "id": "IDN_0019_0020_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Sabu Raijua"
+      },
+      {
+        "id": "IDN_0007_0008_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Kepahiang"
+      },
+      {
+        "id": "IDN_0015_0032_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Malang"
+      },
+      {
+        "id": "IDN_0013_0030_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kota Magelang"
+      },
+      {
+        "id": "IDN_0006_0011_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Empat Lawang"
+      },
+      {
+        "id": "IDN_0020_0013_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Kota Pontianak"
+      },
+      {
+        "id": "IDN_0013_0005_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kebumen"
+      },
+      {
+        "id": "IDN_0006_0006_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Musi Banyuasin"
+      },
+      {
+        "id": "IDN_0003_0017_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Kota Bukittinggi"
+      },
+      {
+        "id": "IDN_0027_0010_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Barru"
+      },
+      {
+        "id": "IDN_0001_0013_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Gayo Lues"
+      },
+      {
+        "id": "IDN_0013_0018_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Pati"
+      },
+      {
+        "id": "IDN_0022_0001_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Tanah Laut"
+      },
+      {
+        "id": "IDN_0002_0017_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Samosir"
+      },
+      {
+        "id": "IDN_0006_0004_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Lahat"
+      },
+      {
+        "id": "IDN_0028_0003_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Konawe"
+      },
+      {
+        "id": "IDN_0006_0007_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Banyu Asin"
+      },
+      {
+        "id": "IDN_0021_0001_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Kotawaringin Barat"
+      },
+      {
+        "id": "IDN_0002_0019_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Batu Bara"
+      },
+      {
+        "id": "IDN_0013_0020_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Jepara"
+      },
+      {
+        "id": "IDN_0023_0009_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Kota Samarinda"
+      },
+      {
+        "id": "IDN_0008_0015_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Kota Metro"
+      },
+      {
+        "id": "IDN_0013_0032_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kota Salatiga"
+      },
+      {
+        "id": "IDN_0005_0009_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Bungo"
+      },
+      {
+        "id": "IDN_0007_0004_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Kaur"
+      },
+      {
+        "id": "IDN_0002_0009_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Simalungun"
+      },
+      {
+        "id": "IDN_0027_0019_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Luwu Utara"
+      },
+      {
+        "id": "IDN_0013_0009_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Boyolali"
+      },
+      {
+        "id": "IDN_0002_0003_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Tapanuli Selatan"
+      },
+      {
+        "id": "IDN_0005_0004_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Batang Hari"
+      },
+      {
+        "id": "IDN_0008_0004_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Lampung Timur"
+      },
+      {
+        "id": "IDN_0013_0029_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Brebes"
+      },
+      {
+        "id": "IDN_0012_0005_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Garut"
+      },
+      {
+        "id": "IDN_0013_0021_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Demak"
+      },
+      {
+        "id": "IDN_0027_0006_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Gowa"
+      },
+      {
+        "id": "IDN_0012_0008_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kuningan"
+      },
+      {
+        "id": "IDN_0011_0004_V1",
+        "adm1": "IDN_0011_V1",
+        "adm2": "Kota Jakarta Pusat"
+      },
+      {
+        "id": "IDN_0012_0011_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Sumedang"
+      },
+      {
+        "id": "IDN_0006_0005_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Musi Rawas"
+      },
+      {
+        "id": "IDN_0001_0011_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Utara"
+      },
+      {
+        "id": "IDN_0004_0006_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Kampar"
+      },
+      {
+        "id": "IDN_0004_0007_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Rokan Hulu"
+      },
+      {
+        "id": "IDN_0003_0005_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Tanah Datar"
+      },
+      {
+        "id": "IDN_0005_0001_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Kerinci"
+      },
+      {
+        "id": "IDN_0012_0007_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Ciamis"
+      },
+      {
+        "id": "IDN_0011_0003_V1",
+        "adm1": "IDN_0011_V1",
+        "adm2": "Kota Jakarta Timur"
+      },
+      {
+        "id": "IDN_0012_0024_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Depok"
+      },
+      {
+        "id": "IDN_0013_0036_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Wadung Kedungombo"
+      },
+      {
+        "id": "IDN_0018_0008_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Lombok Utara"
+      },
+      {
+        "id": "IDN_0019_0021_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Malaka"
+      },
+      {
+        "id": "IDN_0021_0009_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Katingan"
+      },
+      {
+        "id": "IDN_0021_0008_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Seruyan"
+      },
+      {
+        "id": "IDN_0023_0002_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Kutai Barat"
+      },
+      {
+        "id": "IDN_0023_0007_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Mahakam Hulu"
+      },
+      {
+        "id": "IDN_0027_0012_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Soppeng"
+      },
+      {
+        "id": "IDN_0026_0010_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Sigi"
+      },
+      {
+        "id": "IDN_0002_0005_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Tapanuli Utara"
+      },
+      {
+        "id": "IDN_0002_0015_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Humbang Hasundutan"
+      },
+      {
+        "id": "IDN_0004_0012_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Kota Dumai"
+      },
+      {
+        "id": "IDN_0018_0010_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Kota Bima"
+      },
+      {
+        "id": "IDN_0030_0001_V1",
+        "adm1": "IDN_0030_V1",
+        "adm2": "Majene"
+      },
+      {
+        "id": "IDN_0017_0007_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Karang Asem"
+      },
+      {
+        "id": "IDN_0003_0015_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Kota Sawah Lunto"
+      },
+      {
+        "id": "IDN_0007_0001_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Bengkulu Selatan"
+      },
+      {
+        "id": "IDN_0012_0025_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Cimahi"
+      },
+      {
+        "id": "IDN_0001_0002_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Singkil"
+      },
+      {
+        "id": "IDN_0003_0016_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Kota Padang Panjang"
+      },
+      {
+        "id": "IDN_0012_0021_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Bandung"
+      },
+      {
+        "id": "IDN_0001_0018_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Pidie Jaya"
+      },
+      {
+        "id": "IDN_0013_0015_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Grobogan"
+      },
+      {
+        "id": "IDN_0012_0022_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Cirebon"
+      },
+      {
+        "id": "IDN_0002_0023_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Labuhan Batu Utara"
+      },
+      {
+        "id": "IDN_0026_0004_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Poso"
+      },
+      {
+        "id": "IDN_0005_0010_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Kota Jambi"
+      },
+      {
+        "id": "IDN_0007_0010_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Kota Bengkulu"
+      },
+      {
+        "id": "IDN_0013_0034_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kota Pekalongan"
+      },
+      {
+        "id": "IDN_0015_0034_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Pasuruan"
+      },
+      {
+        "id": "IDN_0012_0004_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Bandung"
+      },
+      {
+        "id": "IDN_0008_0008_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Tulangbawang"
+      },
+      {
+        "id": "IDN_0012_0020_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Sukabumi"
+      },
+      {
+        "id": "IDN_0011_0006_V1",
+        "adm1": "IDN_0011_V1",
+        "adm2": "Kota Jakarta Utara"
+      },
+      {
+        "id": "IDN_0006_0015_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Kota Prabumulih"
+      },
+      {
+        "id": "IDN_0007_0005_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Seluma"
+      },
+      {
+        "id": "IDN_0018_0004_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Sumbawa"
+      },
+      {
+        "id": "IDN_0029_0003_V1",
+        "adm1": "IDN_0029_V1",
+        "adm2": "Pohuwato"
+      },
+      {
+        "id": "IDN_0024_0003_V1",
+        "adm1": "IDN_0024_V1",
+        "adm2": "Tana Tidung"
+      },
+      {
+        "id": "IDN_0006_0010_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Ogan Ilir"
+      },
+      {
+        "id": "IDN_0012_0018_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Pangandaran"
+      },
+      {
+        "id": "IDN_0001_0015_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Nagan Raya"
+      },
+      {
+        "id": "IDN_0003_0018_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Kota Payakumbuh"
+      },
+      {
+        "id": "IDN_0001_0006_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Tengah"
+      },
+      {
+        "id": "IDN_0030_0005_V1",
+        "adm1": "IDN_0030_V1",
+        "adm2": "Mamuju Utara"
+      },
+      {
+        "id": "IDN_0028_0014_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Buton Tengah"
+      },
+      {
+        "id": "IDN_0013_0011_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Sukoharjo"
+      },
+      {
+        "id": "IDN_0025_0005_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Minahasa Selatan"
+      },
+      {
+        "id": "IDN_0024_0005_V1",
+        "adm1": "IDN_0024_V1",
+        "adm2": "Kota Tarakan"
+      },
+      {
+        "id": "IDN_0015_0030_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Kediri"
+      },
+      {
+        "id": "IDN_0021_0014_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Kota Palangka Raya"
+      },
+      {
+        "id": "IDN_0019_0006_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Belu"
+      },
+      {
+        "id": "IDN_0012_0017_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Bandung Barat"
+      },
+      {
+        "id": "IDN_0013_0027_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Pemalang"
+      },
+      {
+        "id": "IDN_0019_0012_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Ngada"
+      },
+      {
+        "id": "IDN_0019_0011_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Ende"
+      },
+      {
+        "id": "IDN_0027_0014_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Sidenreng Rappang"
+      },
+      {
+        "id": "IDN_0027_0017_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Luwu"
+      },
+      {
+        "id": "IDN_0027_0015_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Pinrang"
+      },
+      {
+        "id": "IDN_0019_0013_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Manggarai"
+      },
+      {
+        "id": "IDN_0019_0016_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Sumba Tengah"
+      },
+      {
+        "id": "IDN_0019_0018_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Nagekeo"
+      },
+      {
+        "id": "IDN_0015_0026_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Bangkalan"
+      },
+      {
+        "id": "IDN_0004_0005_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Siak"
+      },
+      {
+        "id": "IDN_0003_0003_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Solok"
+      },
+      {
+        "id": "IDN_0009_0001_V1",
+        "adm1": "IDN_0009_V1",
+        "adm2": "Bangka"
+      },
+      {
+        "id": "IDN_0016_0003_V1",
+        "adm1": "IDN_0016_V1",
+        "adm2": "Tangerang"
+      },
+      {
+        "id": "IDN_0019_0009_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Flores Timur"
+      },
+      {
+        "id": "IDN_0026_0003_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Morowali"
+      },
+      {
+        "id": "IDN_0025_0007_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Bolaang Mongondow Utara"
+      },
+      {
+        "id": "IDN_0004_0010_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Kepulauan Meranti"
+      },
+      {
+        "id": "IDN_0023_0005_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Berau"
+      },
+      {
+        "id": "IDN_0013_0008_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Magelang"
+      },
+      {
+        "id": "IDN_0009_0003_V1",
+        "adm1": "IDN_0009_V1",
+        "adm2": "Bangka Barat"
+      },
+      {
+        "id": "IDN_0009_0004_V1",
+        "adm1": "IDN_0009_V1",
+        "adm2": "Bangka Tengah"
+      },
+      {
+        "id": "IDN_0009_0006_V1",
+        "adm1": "IDN_0009_V1",
+        "adm2": "Belitung Timur"
+      },
+      {
+        "id": "IDN_0016_0004_V1",
+        "adm1": "IDN_0016_V1",
+        "adm2": "Serang"
+      },
+      {
+        "id": "IDN_0016_0006_V1",
+        "adm1": "IDN_0016_V1",
+        "adm2": "Kota Cilegon"
+      },
+      {
+        "id": "IDN_0017_0003_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Badung"
+      },
+      {
+        "id": "IDN_0020_0004_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Mempawah"
+      },
+      {
+        "id": "IDN_0020_0011_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Kayong Utara"
+      },
+      {
+        "id": "IDN_0020_0007_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Sintang"
+      },
+      {
+        "id": "IDN_0020_0009_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Sekadau"
+      },
+      {
+        "id": "IDN_0020_0010_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Melawi"
+      },
+      {
+        "id": "IDN_0027_0021_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Toraja Utara"
+      },
+      {
+        "id": "IDN_0026_0008_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Parigi Moutong"
+      },
+      {
+        "id": "IDN_0026_0012_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Morowali Utara"
+      },
+      {
+        "id": "IDN_0028_0008_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Kolaka Utara"
+      },
+      {
+        "id": "IDN_0028_0015_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Buton Selatan"
+      },
+      {
+        "id": "IDN_0027_0011_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Bone"
+      },
+      {
+        "id": "IDN_0030_0003_V1",
+        "adm1": "IDN_0030_V1",
+        "adm2": "Mamasa"
+      },
+      {
+        "id": "IDN_0017_0001_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Jembrana"
+      },
+      {
+        "id": "IDN_0019_0004_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Timor Tengah Selatan"
+      },
+      {
+        "id": "IDN_0028_0002_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Muna"
+      },
+      {
+        "id": "IDN_0003_0007_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Agam"
+      },
+      {
+        "id": "IDN_0014_0002_V1",
+        "adm1": "IDN_0014_V1",
+        "adm2": "Bantul"
+      },
+      {
+        "id": "IDN_0028_0004_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Kolaka"
+      },
+      {
+        "id": "IDN_0020_0008_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Kapuas Hulu"
+      },
+      {
+        "id": "IDN_0002_0034_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Danau Toba"
+      },
+      {
+        "id": "IDN_0027_0008_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Maros"
+      },
+      {
+        "id": "IDN_0005_0007_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Tanjung Jabung Barat"
+      },
+      {
+        "id": "IDN_0028_0009_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Buton Utara"
+      },
+      {
+        "id": "IDN_0008_0007_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Way Kanan"
+      },
+      {
+        "id": "IDN_0005_0003_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Sarolangun"
+      },
+      {
+        "id": "IDN_0015_0029_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Sumenep"
+      },
+      {
+        "id": "IDN_0015_0014_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Pasuruan"
+      },
+      {
+        "id": "IDN_0003_0006_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Padang Pariaman"
+      },
+      {
+        "id": "IDN_0001_0004_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Tenggara"
+      },
+      {
+        "id": "IDN_0001_0005_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Aceh Timur"
+      },
+      {
+        "id": "IDN_0013_0004_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Banjarnegara"
+      },
+      {
+        "id": "IDN_0013_0003_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Purbalingga"
+      },
+      {
+        "id": "IDN_0002_0020_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Padang Lawas Utara"
+      },
+      {
+        "id": "IDN_0026_0002_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Banggai"
+      },
+      {
+        "id": "IDN_0006_0009_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Ogan Komering Ulu Timur"
+      },
+      {
+        "id": "IDN_0028_0013_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Muna Barat"
+      },
+      {
+        "id": "IDN_0012_0028_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Waduk Cirata"
+      },
+      {
+        "id": "IDN_0006_0002_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Ogan Komering Ilir"
+      },
+      {
+        "id": "IDN_0017_0004_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Gianyar"
+      },
+      {
+        "id": "IDN_0008_0005_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Lampung Tengah"
+      },
+      {
+        "id": "IDN_0026_0005_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Donggala"
+      },
+      {
+        "id": "IDN_0008_0014_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Kota Bandar Lampung"
+      },
+      {
+        "id": "IDN_0015_0013_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Probolinggo"
+      },
+      {
+        "id": "IDN_0030_0002_V1",
+        "adm1": "IDN_0030_V1",
+        "adm2": "Polewali Mandar"
+      },
+      {
+        "id": "IDN_0001_0022_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Kota Lhokseumawe"
+      },
+      {
+        "id": "IDN_0002_0001_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Nias"
+      },
+      {
+        "id": "IDN_0002_0011_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Karo"
+      },
+      {
+        "id": "IDN_0002_0008_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Asahan"
+      },
+      {
+        "id": "IDN_0002_0007_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Labuhan Batu"
+      },
+      {
+        "id": "IDN_0002_0013_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Langkat"
+      },
+      {
+        "id": "IDN_0002_0021_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Padang Lawas"
+      },
+      {
+        "id": "IDN_0002_0030_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Kota Medan"
+      },
+      {
+        "id": "IDN_0003_0012_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Pasaman Barat"
+      },
+      {
+        "id": "IDN_0003_0008_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Lima Puluh Kota"
+      },
+      {
+        "id": "IDN_0006_0001_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Ogan Komering Ulu"
+      },
+      {
+        "id": "IDN_0006_0003_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Muara Enim"
+      },
+      {
+        "id": "IDN_0006_0008_V1",
+        "adm1": "IDN_0006_V1",
+        "adm2": "Ogan Komering Ulu Selatan"
+      },
+      {
+        "id": "IDN_0007_0003_V1",
+        "adm1": "IDN_0007_V1",
+        "adm2": "Bengkulu Utara"
+      },
+      {
+        "id": "IDN_0010_0005_V1",
+        "adm1": "IDN_0010_V1",
+        "adm2": "Kepulauan Anambas"
+      },
+      {
+        "id": "IDN_0008_0002_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Tanggamus"
+      },
+      {
+        "id": "IDN_0012_0002_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Sukabumi"
+      },
+      {
+        "id": "IDN_0012_0023_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Bekasi"
+      },
+      {
+        "id": "IDN_0012_0026_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Kota Tasikmalaya"
+      },
+      {
+        "id": "IDN_0013_0025_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Batang"
+      },
+      {
+        "id": "IDN_0015_0015_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Sidoarjo"
+      },
+      {
+        "id": "IDN_0015_0002_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Ponorogo"
+      },
+      {
+        "id": "IDN_0015_0024_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Lamongan"
+      },
+      {
+        "id": "IDN_0015_0023_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Tuban"
+      },
+      {
+        "id": "IDN_0015_0008_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Lumajang"
+      },
+      {
+        "id": "IDN_0015_0018_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Nganjuk"
+      },
+      {
+        "id": "IDN_0015_0025_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Gresik"
+      },
+      {
+        "id": "IDN_0015_0020_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Magetan"
+      },
+      {
+        "id": "IDN_0015_0012_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Situbondo"
+      },
+      {
+        "id": "IDN_0017_0002_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Tabanan"
+      },
+      {
+        "id": "IDN_0019_0010_V1",
+        "adm1": "IDN_0019_V1",
+        "adm2": "Sikka"
+      },
+      {
+        "id": "IDN_0022_0004_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Barito Kuala"
+      },
+      {
+        "id": "IDN_0022_0002_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Kota Baru"
+      },
+      {
+        "id": "IDN_0022_0009_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Tabalong"
+      },
+      {
+        "id": "IDN_0027_0009_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Pangkajene Dan Kepulauan"
+      },
+      {
+        "id": "IDN_0023_0001_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Paser"
+      },
+      {
+        "id": "IDN_0024_0004_V1",
+        "adm1": "IDN_0024_V1",
+        "adm2": "Nunukan"
+      },
+      {
+        "id": "IDN_0025_0002_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Minahasa"
+      },
+      {
+        "id": "IDN_0025_0008_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Siau Tagulandang Biaro"
+      },
+      {
+        "id": "IDN_0026_0007_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Buol"
+      },
+      {
+        "id": "IDN_0026_0006_V1",
+        "adm1": "IDN_0026_V1",
+        "adm2": "Toli-Toli"
+      },
+      {
+        "id": "IDN_0030_0004_V1",
+        "adm1": "IDN_0030_V1",
+        "adm2": "Mamuju"
+      },
+      {
+        "id": "IDN_0028_0011_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Kolaka Timur"
+      },
+      {
+        "id": "IDN_0030_0006_V1",
+        "adm1": "IDN_0030_V1",
+        "adm2": "Mamuju Tengah"
+      },
+      {
+        "id": "IDN_0029_0004_V1",
+        "adm1": "IDN_0029_V1",
+        "adm2": "Bone Bolango"
+      },
+      {
+        "id": "IDN_0024_0002_V1",
+        "adm1": "IDN_0024_V1",
+        "adm2": "Bulungan"
+      },
+      {
+        "id": "IDN_0027_0007_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Sinjai"
+      },
+      {
+        "id": "IDN_0020_0005_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Sanggau"
+      },
+      {
+        "id": "IDN_0013_0013_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Karanganyar"
+      },
+      {
+        "id": "IDN_0027_0005_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Takalar"
+      },
+      {
+        "id": "IDN_0025_0004_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Kepulauan Talaud"
+      },
+      {
+        "id": "IDN_0027_0004_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Jeneponto"
+      },
+      {
+        "id": "IDN_0015_0028_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Pamekasan"
+      },
+      {
+        "id": "IDN_0001_0010_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Bireuen"
+      },
+      {
+        "id": "IDN_0028_0006_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Bombana"
+      },
+      {
+        "id": "IDN_0010_0007_V1",
+        "adm1": "IDN_0010_V1",
+        "adm2": "Kota Tanjung Pinang"
+      },
+      {
+        "id": "IDN_0002_0004_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Tapanuli Tengah"
+      },
+      {
+        "id": "IDN_0010_0002_V1",
+        "adm1": "IDN_0010_V1",
+        "adm2": "Bintan"
+      },
+      {
+        "id": "IDN_0020_0001_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Sambas"
+      },
+      {
+        "id": "IDN_0025_0001_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Bolaang Mongondow"
+      },
+      {
+        "id": "IDN_0013_0006_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Purworejo"
+      },
+      {
+        "id": "IDN_0025_0011_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Bolaang Mongondow Timur"
+      },
+      {
+        "id": "IDN_0027_0003_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Bantaeng"
+      },
+      {
+        "id": "IDN_0002_0006_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Toba Samosir"
+      },
+      {
+        "id": "IDN_0025_0006_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Minahasa Utara"
+      },
+      {
+        "id": "IDN_0004_0002_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Indragiri Hulu"
+      },
+      {
+        "id": "IDN_0015_0027_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Sampang"
+      },
+      {
+        "id": "IDN_0008_0010_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Pringsewu"
+      },
+      {
+        "id": "IDN_0004_0001_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Kuantan Singingi"
+      },
+      {
+        "id": "IDN_0025_0010_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Bolaang Mongondow Selatan"
+      },
+      {
+        "id": "IDN_0001_0009_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Pidie"
+      },
+      {
+        "id": "IDN_0002_0024_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Nias Utara"
+      },
+      {
+        "id": "IDN_0003_0014_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Kota Solok"
+      },
+      {
+        "id": "IDN_0027_0018_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Tana Toraja"
+      },
+      {
+        "id": "IDN_0013_0033_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kota Semarang"
+      },
+      {
+        "id": "IDN_0021_0003_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Kapuas"
+      },
+      {
+        "id": "IDN_0025_0009_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Minahasa Tenggara"
+      },
+      {
+        "id": "IDN_0008_0003_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Lampung Selatan"
+      },
+      {
+        "id": "IDN_0021_0013_V1",
+        "adm1": "IDN_0021_V1",
+        "adm2": "Murung Raya"
+      },
+      {
+        "id": "IDN_0002_0012_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Deli Serdang"
+      },
+      {
+        "id": "IDN_0020_0003_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Landak"
+      },
+      {
+        "id": "IDN_0013_0014_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Sragen"
+      },
+      {
+        "id": "IDN_0004_0003_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Indragiri Hilir"
+      },
+      {
+        "id": "IDN_0005_0005_V1",
+        "adm1": "IDN_0005_V1",
+        "adm2": "Muaro Jambi"
+      },
+      {
+        "id": "IDN_0003_0011_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Dharmasraya"
+      },
+      {
+        "id": "IDN_0013_0028_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Tegal"
+      },
+      {
+        "id": "IDN_0020_0002_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Bengkayang"
+      },
+      {
+        "id": "IDN_0003_0010_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Solok Selatan"
+      },
+      {
+        "id": "IDN_0027_0024_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Kota Palopo"
+      },
+      {
+        "id": "IDN_0013_0012_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Wonogiri"
+      },
+      {
+        "id": "IDN_0025_0003_V1",
+        "adm1": "IDN_0025_V1",
+        "adm2": "Kepulauan Sangihe"
+      },
+      {
+        "id": "IDN_0015_0017_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Jombang"
+      },
+      {
+        "id": "IDN_0013_0007_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Wonosobo"
+      },
+      {
+        "id": "IDN_0020_0006_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Ketapang"
+      },
+      {
+        "id": "IDN_0013_0024_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Kendal"
+      },
+      {
+        "id": "IDN_0015_0019_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Madiun"
+      },
+      {
+        "id": "IDN_0020_0012_V1",
+        "adm1": "IDN_0020_V1",
+        "adm2": "Kubu Raya"
+      },
+      {
+        "id": "IDN_0008_0006_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Lampung Utara"
+      },
+      {
+        "id": "IDN_0013_0022_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Semarang"
+      },
+      {
+        "id": "IDN_0015_0006_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kediri"
+      },
+      {
+        "id": "IDN_0003_0013_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Kota Padang"
+      },
+      {
+        "id": "IDN_0004_0004_V1",
+        "adm1": "IDN_0004_V1",
+        "adm2": "Pelalawan"
+      },
+      {
+        "id": "IDN_0018_0007_V1",
+        "adm1": "IDN_0018_V1",
+        "adm2": "Sumbawa Barat"
+      },
+      {
+        "id": "IDN_0015_0038_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Kota Batu"
+      },
+      {
+        "id": "IDN_0003_0009_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Pasaman"
+      },
+      {
+        "id": "IDN_0001_0023_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Kota Subulussalam"
+      },
+      {
+        "id": "IDN_0015_0011_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Bondowoso"
+      },
+      {
+        "id": "IDN_0013_0016_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Blora"
+      },
+      {
+        "id": "IDN_0001_0001_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Simeulue"
+      },
+      {
+        "id": "IDN_0002_0002_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Mandailing Natal"
+      },
+      {
+        "id": "IDN_0029_0006_V1",
+        "adm1": "IDN_0029_V1",
+        "adm2": "Kota Gorontalo"
+      },
+      {
+        "id": "IDN_0001_0019_V1",
+        "adm1": "IDN_0001_V1",
+        "adm2": "Kota Banda Aceh"
+      },
+      {
+        "id": "IDN_0024_0001_V1",
+        "adm1": "IDN_0024_V1",
+        "adm2": "Malinau"
+      },
+      {
+        "id": "IDN_0028_0001_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Buton"
+      },
+      {
+        "id": "IDN_0013_0010_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Klaten"
+      },
+      {
+        "id": "IDN_0002_0018_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Serdang Bedagai"
+      },
+      {
+        "id": "IDN_0003_0004_V1",
+        "adm1": "IDN_0003_V1",
+        "adm2": "Sijunjung"
+      },
+      {
+        "id": "IDN_0002_0014_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Nias Selatan"
+      },
+      {
+        "id": "IDN_0012_0003_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Cianjur"
+      },
+      {
+        "id": "IDN_0008_0001_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Lampung Barat"
+      },
+      {
+        "id": "IDN_0008_0012_V1",
+        "adm1": "IDN_0008_V1",
+        "adm2": "Tulang Bawang Barat"
+      },
+      {
+        "id": "IDN_0011_0005_V1",
+        "adm1": "IDN_0011_V1",
+        "adm2": "Kota Jakarta Barat"
+      },
+      {
+        "id": "IDN_0015_0016_V1",
+        "adm1": "IDN_0015_V1",
+        "adm2": "Mojokerto"
+      },
+      {
+        "id": "IDN_0012_0001_V1",
+        "adm1": "IDN_0012_V1",
+        "adm2": "Bogor"
+      },
+      {
+        "id": "IDN_0022_0003_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Banjar"
+      },
+      {
+        "id": "IDN_0013_0002_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Banyumas"
+      },
+      {
+        "id": "IDN_0002_0010_V1",
+        "adm1": "IDN_0002_V1",
+        "adm2": "Dairi"
+      },
+      {
+        "id": "IDN_0017_0006_V1",
+        "adm1": "IDN_0017_V1",
+        "adm2": "Bangli"
+      },
+      {
+        "id": "IDN_0023_0004_V1",
+        "adm1": "IDN_0023_V1",
+        "adm2": "Kutai Timur"
+      },
+      {
+        "id": "IDN_0013_0017_V1",
+        "adm1": "IDN_0013_V1",
+        "adm2": "Rembang"
+      },
+      {
+        "id": "IDN_0022_0010_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Tanah Bumbu"
+      },
+      {
+        "id": "IDN_0022_0012_V1",
+        "adm1": "IDN_0022_V1",
+        "adm2": "Kota Banjarmasin"
+      },
+      {
+        "id": "IDN_0027_0020_V1",
+        "adm1": "IDN_0027_V1",
+        "adm2": "Luwu Timur"
+      },
+      {
+        "id": "IDN_0028_0005_V1",
+        "adm1": "IDN_0028_V1",
+        "adm2": "Konawe Selatan"
+      }
+    ],
+    "IND": [
+      {
+        "id": "IND_0032_0004_V1",
+        "adm1": "IND_0032_V1",
+        "adm2": "North Tripura"
+      },
+      {
+        "id": "IND_0024_0007_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Peren"
+      },
+      {
+        "id": "IND_0023_0007_V1",
+        "adm1": "IND_0023_V1",
+        "adm2": "Saiha"
+      },
+      {
+        "id": "IND_0032_0008_V1",
+        "adm1": "IND_0032_V1",
+        "adm2": "West Tripura"
+      },
+      {
+        "id": "IND_0024_0010_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Wokha"
+      },
+      {
+        "id": "IND_0023_0001_V1",
+        "adm1": "IND_0023_V1",
+        "adm2": "Aizawl"
+      },
+      {
+        "id": "IND_0024_0005_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Mokokchung"
+      },
+      {
+        "id": "IND_0024_0006_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Mon"
+      },
+      {
+        "id": "IND_0021_0007_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Tamenglong"
+      },
+      {
+        "id": "IND_0021_0003_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Churachandpur"
+      },
+      {
+        "id": "IND_0024_0001_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Dimapur"
+      },
+      {
+        "id": "IND_0032_0003_V1",
+        "adm1": "IND_0032_V1",
+        "adm2": "Khowai"
+      },
+      {
+        "id": "IND_0021_0001_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Bishnupur"
+      },
+      {
+        "id": "IND_0023_0006_V1",
+        "adm1": "IND_0023_V1",
+        "adm2": "Mamit"
+      },
+      {
+        "id": "IND_0032_0007_V1",
+        "adm1": "IND_0032_V1",
+        "adm2": "Unokoti"
+      },
+      {
+        "id": "IND_0032_0001_V1",
+        "adm1": "IND_0032_V1",
+        "adm2": "Dhalai"
+      },
+      {
+        "id": "IND_0024_0011_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Zunheboto"
+      },
+      {
+        "id": "IND_0023_0008_V1",
+        "adm1": "IND_0023_V1",
+        "adm2": "Serchhip"
+      },
+      {
+        "id": "IND_0032_0006_V1",
+        "adm1": "IND_0032_V1",
+        "adm2": "South Tripura"
+      },
+      {
+        "id": "IND_0024_0009_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Tuensang"
+      },
+      {
+        "id": "IND_0023_0005_V1",
+        "adm1": "IND_0023_V1",
+        "adm2": "Lunglei"
+      },
+      {
+        "id": "IND_0024_0008_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Phek"
+      },
+      {
+        "id": "IND_0021_0002_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Chandel"
+      },
+      {
+        "id": "IND_0021_0008_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Thoubal"
+      },
+      {
+        "id": "IND_0024_0002_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Kiphire"
+      },
+      {
+        "id": "IND_0024_0003_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Kohima"
+      },
+      {
+        "id": "IND_0021_0004_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Imphal East"
+      },
+      {
+        "id": "IND_0021_0005_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Imphal West"
+      },
+      {
+        "id": "IND_0021_0006_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Senapati"
+      },
+      {
+        "id": "IND_0024_0004_V1",
+        "adm1": "IND_0024_V1",
+        "adm2": "Longleng"
+      },
+      {
+        "id": "IND_0021_0009_V1",
+        "adm1": "IND_0021_V1",
+        "adm2": "Ukhrul"
+      },
+      {
+        "id": "IND_0023_0003_V1",
+        "adm1": "IND_0023_V1",
+        "adm2": "Kolasib"
+      },
+      {
+        "id": "IND_0032_0002_V1",
+        "adm1": "IND_0032_V1",
+        "adm2": "Gomati"
+      }
+    ],
+    "JPN": [
+      {
+        "id": "JPN_0031_0024_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Kunigamison"
+      },
+      {
+        "id": "JPN_0031_0052_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Yonasirotyoo"
+      },
+      {
+        "id": "JPN_0031_0029_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Nahasi"
+      },
+      {
+        "id": "JPN_0031_0009_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Higasison"
+      },
+      {
+        "id": "JPN_0031_0034_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Okinawasi"
+      },
+      {
+        "id": "JPN_0031_0003_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Ginozason"
+      },
+      {
+        "id": "JPN_0031_0030_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Nakagusukuson"
+      },
+      {
+        "id": "JPN_0031_0018_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Kadenatyoo"
+      },
+      {
+        "id": "JPN_0031_0046_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Tyatantyoo"
+      },
+      {
+        "id": "JPN_0031_0042_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Tinenson"
+      },
+      {
+        "id": "JPN_0031_0033_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Nisiharatyoo"
+      },
+      {
+        "id": "JPN_0031_0005_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Gusikawasi"
+      },
+      {
+        "id": "JPN_0031_0004_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Gusikamison"
+      },
+      {
+        "id": "JPN_0031_0043_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Tokasikison"
+      },
+      {
+        "id": "JPN_0031_0044_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Tomigusukuson"
+      },
+      {
+        "id": "JPN_0031_0025_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Minamidaitooson"
+      },
+      {
+        "id": "JPN_0031_0007_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Gusukubetyoo"
+      },
+      {
+        "id": "JPN_0031_0022_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Kitanakagusukuson"
+      },
+      {
+        "id": "JPN_0031_0012_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Iheyason"
+      },
+      {
+        "id": "JPN_0031_0036_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Oogimison"
+      },
+      {
+        "id": "JPN_0031_0051_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Yonagunityoo"
+      },
+      {
+        "id": "JPN_0031_0035_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Onnason"
+      },
+      {
+        "id": "JPN_0031_0038_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Sasikityoo"
+      },
+      {
+        "id": "JPN_0031_0032_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Nakizinson"
+      },
+      {
+        "id": "JPN_0031_0026_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Motobutyoo"
+      },
+      {
+        "id": "JPN_0031_0047_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Uenoson"
+      },
+      {
+        "id": "JPN_0031_0014_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Isigakisi"
+      },
+      {
+        "id": "JPN_0031_0031_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Nakazatoson"
+      },
+      {
+        "id": "JPN_0031_0028_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Nagosi"
+      },
+      {
+        "id": "JPN_0031_0010_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Hirarasi"
+      },
+      {
+        "id": "JPN_0031_0016_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Itomansi"
+      },
+      {
+        "id": "JPN_0031_0048_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Urasoesi"
+      },
+      {
+        "id": "JPN_0031_0049_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Yomitanson"
+      },
+      {
+        "id": "JPN_0031_0037_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Oozatoson"
+      },
+      {
+        "id": "JPN_0031_0017_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Izenason"
+      },
+      {
+        "id": "JPN_0031_0013_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Irabutyoo"
+      },
+      {
+        "id": "JPN_0031_0011_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Ieson"
+      },
+      {
+        "id": "JPN_0031_0039_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Simozityoo"
+      },
+      {
+        "id": "JPN_0031_0008_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Haebarutyoo"
+      },
+      {
+        "id": "JPN_0031_0020_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Kintyoo"
+      },
+      {
+        "id": "JPN_0031_0006_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Gusikawason"
+      },
+      {
+        "id": "JPN_0031_0001_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Agunison"
+      },
+      {
+        "id": "JPN_0031_0019_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Katurentyoo"
+      },
+      {
+        "id": "JPN_0031_0040_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Tamagusukuson"
+      },
+      {
+        "id": "JPN_0031_0002_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Ginowansi"
+      },
+      {
+        "id": "JPN_0031_0015_V1",
+        "adm1": "JPN_0031_V1",
+        "adm2": "Isikawasi"
+      }
+    ]
+  },
+  "note": "Partial ADM2: at least 45% planar overlap with previously SVG-matched regional geometry. SVG membership retains original names for audit."
+}
