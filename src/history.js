@@ -5,6 +5,20 @@ import {chronicleSource, preNarratives} from './history-narratives.js';
 const preEraId = 'pre-suvarnabhumi';
 const eras = [...historyEras, {id:'origins', title:'Before the Union', date:'683', events:[history[0]]}];
 const art = ['./assets/history/river-template.svg','./assets/history/court-template.svg','./assets/history/voyage-template.svg'];
+const eventArtwork = [
+  ["Chola Ships Enter Palembang River", "Shattered Srivijayan Throne at Dawn"],
+  ["A River Port’s Palm-Leaf Registry", "The River Registry of Orphaned Houses", "Remembering Homes in Srivijaya"],
+  ["Suryaputradeva’s Rise at the Harbor", "Exile Fleet Returns to Srivijaya", "Suryaputradeva charts a maritime alliance"],
+  ["Rebuilding Order by the Musi", "Srivijaya River Markets Reopen"],
+  ["Sumpah Nagara: One banner, one law", "Suryaputradeva's Oath at Dusk", "Sumpah Nagara: Founding Oath on the Musi", "The Sacred River Oath"],
+  ["Sumatra Unification Campaign Map", "Early medieval Sumatran harbor exchange", "Charting Sumatera’s Maritime Unification", "Suryaputradewa Charts the Sumateran Sea"],
+  ["Guided passage at the Srivijayan harbor", "Cargo Damage Hearing at the Harbor"],
+  ["Sailcloth and Shared Relief", "Healing Hands at the River Port"],
+  ["Twilight Lockport at Kadaram", "Royal Lessons at Langkasuka"],
+  ["Yue Lian Zhao’s Celestial Bridge", "Imperial Wedding Beneath the Pavilion", "Song Princess Arrives in Srivijaya"],
+];
+const eventImage = (index, image) => `./assets/history/events/${String(index + 1).padStart(2, "0")}-${image}.webp`;
+
 const orderedEvents = era => era.events.map((event, index) => ({...event, index}))
   .sort((a,b) => parseInt(a.date.replace(/^c\. /,''),10) - parseInt(b.date.replace(/^c\. /,''),10));
 const ornament = '<div class="scroll-ornament" aria-hidden="true"><span>✺</span></div>';
@@ -13,15 +27,18 @@ function chapters(era) {
   return orderedEvents(era).map((event, position) => {
     const id = `scroll-${era.id}-${event.index}`;
     const sections = era.id === preEraId ? preNarratives[`1.${event.index + 1}`] : [{title:'In the imperial record',paragraphs:[event.body]}];
+    const images = era.id === preEraId ? eventArtwork[event.index] : undefined;
+    const inset = (src, caption) => `<figure class="scroll-inset"><img src="${src}" loading="lazy" alt="${e(caption)}"><figcaption>${e(caption)}</figcaption></figure>`;
     return `<article class="scroll-event ${position % 2 ? 'scroll-event--dark' : ''}" id="${id}" data-scroll-event="${position}">
       <details class="scroll-story" ${position === 0 ? 'open' : ''}>
         <summary class="scroll-preview" aria-controls="${id}-body">
           <span class="scroll-chapter">ACCOUNT ${String(position+1).padStart(2,'0')} <span aria-hidden="true">|</span> ${e(era.title)}</span>
           <span class="scroll-event-grid"><time class="scroll-year ${event.date.includes('–') ? 'scroll-year--range' : ''}">${event.date.split('–').map((part,i)=>`<span>${i ? '–' : ''}${e(part)}</span>`).join('')}</time><span class="scroll-event-copy"><h2>${e(event.title)}</h2><span class="scroll-place">${e(event.place || 'Imperial chronicle')}</span><span class="scroll-deck">${e(event.body)}</span><span class="scroll-read"><span class="when-closed">Continue reading ↓</span><span class="when-open">Collapse story ↑</span></span></span></span>
-          <span class="scroll-art"><img src="${art[position % art.length]}" alt="" loading="lazy"><span class="scroll-art-label">Illustration placeholder</span></span>
+          <span class="scroll-art"><img src="${images ? eventImage(event.index, 0) : art[position % art.length]}" alt="" loading="lazy">${images ? "" : '<span class="scroll-art-label">Illustration placeholder</span>'}</span>
         </summary>
         <div class="scroll-story-body" id="${id}-body">
-          ${ornament}<div class="scroll-prose">${(sections || []).map((section,i) => `<section class="scroll-prose-section">${i === 1 ? `<figure class="scroll-inset"><img src="${art[(position+1)%art.length]}" loading="lazy" alt="Decorative landscape template"><figcaption>Illustration placeholder · ${e(event.place || era.title)}</figcaption></figure>` : ''}<h3>${e(section.title)}</h3>${section.paragraphs.map(p=>`<p>${e(p)}</p>`).join('')}</section>`).join('')}</div>
+          ${ornament}<div class="scroll-prose">${(sections || []).map((section,i) => `<section class="scroll-prose-section">${i === 1 ? (images ? inset(eventImage(event.index, 1), images[1]) : inset(art[(position+1)%art.length], `Illustration placeholder · ${event.place || era.title}`)) : ''}<h3>${e(section.title)}</h3>${section.paragraphs.map(p=>`<p>${e(p)}</p>`).join('')}</section>`).join('')}</div>
+          ${images?.length > 2 ? `<div class="scroll-gallery">${images.slice(2).map((caption, i) => inset(eventImage(event.index, i + 2), caption)).join('')}</div>` : ''}
           <div class="scroll-end"><a href="${chronicleSource}" target="_blank" rel="noopener noreferrer">From the Suvarnabhumi Grand Timeline ↗</a><button type="button" data-collapse-story>Collapse story ↑</button></div>${ornament}
         </div>
       </details>
@@ -31,7 +48,8 @@ function chapters(era) {
 
 function eraContent(era) {
   const count = era.events.length;
-  return `<header class="scroll-hero"><img src="${art[0]}" alt="" class="scroll-hero-art"><div class="scroll-hero-inner"><div><p class="scroll-kicker">THE IMPERIAL CHRONICLE</p><h1 tabindex="-1">${e(era.title)}</h1><p class="scroll-era-dates">${e(era.date)}</p>${ornament}</div><p class="scroll-era-intro">${e(era.summary || 'Follow the turning points, alliances and ambitions that shaped the next age of Suvarnabhumi.')}</p></div><span class="scroll-art-label">Illustration placeholder</span></header>
+  const eraBanner = era.id === preEraId ? './assets/history/events/pre-suvarnabhumi.webp' : null;
+  return `<header class="scroll-hero"><img src="${eraBanner || art[0]}" alt="" class="scroll-hero-art"><div class="scroll-hero-inner"><div><p class="scroll-kicker">THE IMPERIAL CHRONICLE</p><h1 tabindex="-1">${e(era.title)}</h1><p class="scroll-era-dates">${e(era.date)}</p>${ornament}</div><p class="scroll-era-intro">${e(era.summary || 'Follow the turning points, alliances and ambitions that shaped the next age of Suvarnabhumi.')}</p></div>${eraBanner ? "" : '<span class="scroll-art-label">Illustration placeholder</span>'}</header>
     <div class="scroll-tools"><p>${count ? `${count} historical ${count === 1 ? 'account' : 'accounts'} · Read at your own pace` : 'The chronicle continues'}</p>${count ? `<label>Jump to event <select data-scroll-jump aria-label="Jump to event"><option value="">Choose an event…</option>${orderedEvents(era).map(event=>`<option value="scroll-${era.id}-${event.index}">${e(event.date)} — ${e(event.title)}</option>`).join('')}</select></label>` : ''}</div>
     ${count ? chapters(era) : `<div class="scroll-empty">${ornament}<h2>A new age awaits</h2><p>The detailed accounts of this era are still being prepared.</p><button type="button" data-return-pre>Return to Pre-Suvarnabhumi</button></div>`}`;
 }

@@ -208,3 +208,5 @@ body:has(.history-scroll) .site-nav a[aria-current=page]{background:var(--navy2)
 @media(max-width:1000px) and (min-width:651px){.scroll-year--range{font-size:54px;min-width:0}}
 
 .scroll-event--dark .scroll-prose h3{color:var(--paper)}
+.scroll-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px;margin:24px 0}
+.scroll-gallery .scroll-inset{float:none;width:auto;margin:0}
