@@ -30,11 +30,7 @@ export const settlements = [
       src: "./assets/settlements/maharajapura-waterfront.webp",
       alt: "Illustration of a shaded waterfront colonnade overlooking the imperial palace"
     },
-    gallery: [
-      {src: "./assets/settlements/maharajapura-panorama.webp", alt: "Palace and skyline seen across the strait", caption: "Maharajapura across the strait"},
-      {src: "./assets/settlements/maharajapura-waterfront.webp", alt: "Carved timber colonnade beside the water", caption: "The ceremonial waterfront"},
-      ...maharajapuraLandmarkGallery
-    ]
+    gallery: maharajapuraLandmarkGallery
   },
   {id:"benghali",name:"Benghali",region:"Bengal Oriental",type:"Delta metropolis",era:"River and textile city",image:"https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1600&q=85",summary:"A city of levee gardens, canal boulevards, textile exchanges and river logistics.",detail:"Benghali's urban form follows the lower Bengal delta and its interwoven networks of waterways and textile trade.",features:["Levee gardens","Textile exchanges","Canals"]},
   {id:"zanzibar",name:"Zanzibar",region:"Ratnadvipa",type:"Oceanic port",era:"Conquered 1750",image:"https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1600&q=85",summary:"The pearl port and customs throne of the East African Swahili coast.",detail:"Coral-stone quarters, dhow quays and Pemba spice terraces shape this tropical oceanic metropolis.",features:["Stone Quarter","Pemba spice terraces","Dhow quays"]},
