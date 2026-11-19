@@ -1,6 +1,8 @@
+import { settlementMap, mountSettlementMap } from "./settlement-map.js";
 import { breadcrumb, button, escapeHTML as e, image } from "./components.js";
 
 export function settlementDetail(city) {
+  const hasMap = city.id === "maharajapura";
   const hero = city.hero ?? { src: city.image, alt: "", placeholder: true };
   const facts = city.facts ?? [
     { label: "Administrative setting", value: city.region },
@@ -28,16 +30,21 @@ export function settlementDetail(city) {
     ["Districts", city.districts?.length ? renderSection("Districts", city.districts) : ""],
     ["Landmarks", (city.landmarks ?? city.features)?.length
       ? renderSection("Landmarks & points of interest", city.landmarks ?? city.features) : ""],
-    ["Gallery", city.gallery?.length ? `<div class="settlement-gallery">${city.gallery.map(photo =>
-      `<figure>${image(photo.src, photo.alt)}${photo.caption ? `<figcaption>${e(photo.caption)}</figcaption>` : ""}</figure>`
+    ["Map", hasMap ? settlementMap() : ""],
+    ["Gallery", city.gallery?.length ? `<div class="settlement-gallery">${city.gallery.map((photo, index) =>
+      `<figure id="settlement-photo-${index}" tabindex="-1">${image(photo.src, photo.alt)}${photo.caption ? `<figcaption>${e(photo.caption)}</figcaption>` : ""}</figure>`
     ).join("")}</div>` : ""]
   ].filter(([, content]) => content);
 
-  return `<article class="settlement-detail">
+  const initialTab = hasMap ? sections.findIndex(([label]) => label === "Map") : 0;
+
+  return `<article class="settlement-detail${hasMap ? " settlement-detail--atlas" : ""}">
     <header class="settlement-panorama">
       <img src="${e(hero.src)}" alt="${e(hero.alt)}" fetchpriority="high">
       <div class="container settlement-panorama__copy">
-        ${breadcrumb([{label: "Settlements", href: "#/settlements"}, {label: city.name}])}
+        ${breadcrumb(hasMap
+          ? [{label: "Suvarnabhumi", href: "#/"}, {label: "Cakravala", href: "#/regions"}, {label: "Batam"}]
+          : [{label: "Settlements", href: "#/settlements"}, {label: city.name}])}
         <h1>${e(city.name)}</h1>
         <p>${e(city.subtitle ?? `${city.type} · ${city.region}`)}</p>
       </div>
@@ -45,13 +52,13 @@ export function settlementDetail(city) {
     <div class="settlement-tabs">
       <div class="container" role="tablist" aria-label="Settlement sections">
         ${sections.map(([label], index) => `<button type="button" role="tab" id="settlement-tab-${index}"
-          aria-controls="settlement-panel-${index}" aria-selected="${index === 0}"
-          tabindex="${index === 0 ? 0 : -1}">${label}</button>`).join("")}
+          aria-controls="settlement-panel-${index}" aria-selected="${index === initialTab}"
+          tabindex="${index === initialTab ? 0 : -1}">${label}</button>`).join("")}
       </div>
     </div>
     <div class="container settlement-body">
-      ${sections.map(([, content], index) => `<section role="tabpanel" id="settlement-panel-${index}"
-        aria-labelledby="settlement-tab-${index}" tabindex="0"${index === 0 ? "" : " hidden"}>${content}</section>`).join("")}
+      ${sections.map(([label, content], index) => `<section role="tabpanel" id="settlement-panel-${index}"
+        aria-labelledby="settlement-tab-${index}" data-section="${label}" tabindex="0"${index === initialTab ? "" : " hidden"}>${content}</section>`).join("")}
       <div class="settlement-body__footer">
         ${hero.placeholder ? "<p>Banner photograph is an editorial placeholder.</p>" : ""}
         ${button("All settlements", "#/settlements")}
@@ -73,6 +80,8 @@ export function mountSettlementDetail(root) {
   const tabs = [...root.querySelectorAll('[role="tab"]')];
   const panels = [...root.querySelectorAll('[role="tabpanel"]')];
 
+  let map;
+
   function select(index) {
     tabs.forEach((tab, position) => {
       const active = position === index;
@@ -80,6 +89,16 @@ export function mountSettlementDetail(root) {
       tab.tabIndex = active ? 0 : -1;
       panels[position].hidden = !active;
     });
+    if (panels[index].dataset.section === "Map") {
+      map ??= mountSettlementMap(panels[index], photoIndex => {
+        const galleryIndex = panels.findIndex(panel => panel.dataset.section === "Gallery");
+        select(galleryIndex);
+        const photo = root.querySelector(`#settlement-photo-${photoIndex}`);
+        photo.focus();
+        photo.scrollIntoView({ block: "center" });
+      });
+      map?.invalidateSize();
+    }
   }
 
   tabs.forEach((tab, index) => {
@@ -97,4 +116,6 @@ export function mountSettlementDetail(root) {
       tabs[next].focus();
     });
   });
+  select(tabs.findIndex(tab => tab.getAttribute("aria-selected") === "true"));
+  return () => map?.remove();
 }
