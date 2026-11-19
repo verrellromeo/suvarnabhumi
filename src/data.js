@@ -11,10 +11,10 @@ export const settlements = [
     era: "Capital since 1749",
     image: "./assets/settlements/maharajapura-panorama.webp",
     hero: {
-      src: "./assets/settlements/maharajapura-panorama.webp",
-      alt: "Illustration of Maharajapura’s waterfront, imperial palace and modern skyline"
+      src: maharajapuraLandmarkGallery.find(photo => photo.caption === "Grand Palace of Suvarnabhumi").src,
+      alt: "The gold-domed Grand Palace of Suvarnabhumi at the waterfront"
     },
-    subtitle: "Imperial capital on the Selat Maharaja",
+    subtitle: "Imperial seat of the Malaya Islands",
     overviewTitle: "A capital across the strait",
     summary: "Maharajapura is the imperial capital of the Malaya Islands Capital Region. Bridges and maritime corridors link its ceremonial districts, working harbours and financial centres across the Selat Maharaja.",
     detail: "White-and-gold palaces and blue-tiled ministries face the strait. Shaded colonnades, civic plazas and mangrove promenades connect the waterfront to the city’s modern skyline.",
