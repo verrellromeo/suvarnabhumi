@@ -1,7 +1,38 @@
 // Editorial starter content. Dates are included only where the project canon confirms them.
 export const settlements = [
   {id:"srivijaya",name:"Srivijaya",region:"Srivijaya Special Administrative Region",type:"Sacred metropolis",era:"Founded 683",image:"https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1600&q=85",summary:"The sacred Musi River metropolis and a living archive of the empire's maritime beginnings.",detail:"From a riverine Buddhist kingdom to an enduring centre of dynastic memory, scholarship and pilgrimage.",features:["Musi River","Imperial archives","Maritime heritage"]},
-  {id:"maharajapura",name:"Maharajapura",region:"Malaya Islands Capital Region",type:"Imperial capital",era:"Contemporary capital",image:"https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=85",summary:"An island capital connected by bridges, maritime corridors and monumental civic districts.",detail:"The capital region joins islands into a metropolitan landscape of ceremonial spaces and working ports.",features:["Island bridges","Civic districts","Maritime network"]},
+  {
+    id: "maharajapura",
+    name: "Maharajapura",
+    region: "Malaya Islands Capital Region",
+    type: "Imperial capital",
+    era: "Capital since 1749",
+    image: "./assets/settlements/maharajapura-panorama.webp",
+    hero: {
+      src: "./assets/settlements/maharajapura-panorama.webp",
+      alt: "Illustration of Maharajapura’s waterfront, imperial palace and modern skyline"
+    },
+    subtitle: "Imperial capital on the Selat Maharaja",
+    overviewTitle: "A capital across the strait",
+    summary: "Maharajapura is the imperial capital of the Malaya Islands Capital Region. Bridges and maritime corridors link its ceremonial districts, working harbours and financial centres across the Selat Maharaja.",
+    detail: "White-and-gold palaces and blue-tiled ministries face the strait. Shaded colonnades, civic plazas and mangrove promenades connect the waterfront to the city’s modern skyline.",
+    facts: [
+      {label: "Metro population estimate", value: "75.0 million"},
+      {label: "Capital since", value: "1749"}
+    ],
+    history: "Maharajapura succeeded Srivijaya as the imperial capital in 1749, after the end of the concession order. The move marked a period of imperial renewal.",
+    districts: ["Royal and administrative core", "Naval harbours", "Finance islands", "University districts", "Garden townships"],
+    features: ["Imperial palace", "Ceremonial causeways", "Mangrove promenades"],
+    feature: {
+      title: "The ceremonial waterfront",
+      src: "./assets/settlements/maharajapura-waterfront.webp",
+      alt: "Illustration of a shaded waterfront colonnade overlooking the imperial palace"
+    },
+    gallery: [
+      {src: "./assets/settlements/maharajapura-panorama.webp", alt: "Palace and skyline seen across the strait", caption: "Maharajapura across the strait"},
+      {src: "./assets/settlements/maharajapura-waterfront.webp", alt: "Carved timber colonnade beside the water", caption: "The ceremonial waterfront"}
+    ]
+  },
   {id:"benghali",name:"Benghali",region:"Bengal Oriental",type:"Delta metropolis",era:"River and textile city",image:"https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1600&q=85",summary:"A city of levee gardens, canal boulevards, textile exchanges and river logistics.",detail:"Benghali's urban form follows the lower Bengal delta and its interwoven networks of waterways and textile trade.",features:["Levee gardens","Textile exchanges","Canals"]},
   {id:"zanzibar",name:"Zanzibar",region:"Ratnadvipa",type:"Oceanic port",era:"Conquered 1750",image:"https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1600&q=85",summary:"The pearl port and customs throne of the East African Swahili coast.",detail:"Coral-stone quarters, dhow quays and Pemba spice terraces shape this tropical oceanic metropolis.",features:["Stone Quarter","Pemba spice terraces","Dhow quays"]},
   {id:"edo-kanto",name:"Edo–Kantō",region:"Utyanagara",type:"Northern command city",era:"Founded 1457",image:"https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1600&q=85",summary:"A metropolis of canal heritage, rail precision and Pacific finance.",detail:"Its founding in 1457 followed the shogunate's allegiance to Suvarnabhumi in 1325; those are distinct events.",features:["Canal heritage","Rail networks","Pacific finance"]},
