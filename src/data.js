@@ -1,3 +1,5 @@
+import { maharajapuraLandmarkGallery } from "./maharajapura-gallery.js";
+
 // Editorial starter content. Dates are included only where the project canon confirms them.
 export const settlements = [
   {id:"srivijaya",name:"Srivijaya",region:"Srivijaya Special Administrative Region",type:"Sacred metropolis",era:"Founded 683",image:"https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1600&q=85",summary:"The sacred Musi River metropolis and a living archive of the empire's maritime beginnings.",detail:"From a riverine Buddhist kingdom to an enduring centre of dynastic memory, scholarship and pilgrimage.",features:["Musi River","Imperial archives","Maritime heritage"]},
@@ -30,7 +32,8 @@ export const settlements = [
     },
     gallery: [
       {src: "./assets/settlements/maharajapura-panorama.webp", alt: "Palace and skyline seen across the strait", caption: "Maharajapura across the strait"},
-      {src: "./assets/settlements/maharajapura-waterfront.webp", alt: "Carved timber colonnade beside the water", caption: "The ceremonial waterfront"}
+      {src: "./assets/settlements/maharajapura-waterfront.webp", alt: "Carved timber colonnade beside the water", caption: "The ceremonial waterfront"},
+      ...maharajapuraLandmarkGallery
     ]
   },
   {id:"benghali",name:"Benghali",region:"Bengal Oriental",type:"Delta metropolis",era:"River and textile city",image:"https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1600&q=85",summary:"A city of levee gardens, canal boulevards, textile exchanges and river logistics.",detail:"Benghali's urban form follows the lower Bengal delta and its interwoven networks of waterways and textile trade.",features:["Levee gardens","Textile exchanges","Canals"]},
