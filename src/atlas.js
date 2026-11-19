@@ -2,8 +2,8 @@ import {mountCityLayer} from "./cities.js";
 // UNICEF GeoRepo snapshot, partitioned by country and loaded on demand.
 const BASE="./assets/map/global/";
 const packCache=new Map();
-export async function readCompressed(url){const response=await fetch(url);if(!response.ok)throw Error(`HTTP ${response.status}`);const stream=response.body.pipeThrough(new DecompressionStream("gzip"));return JSON.parse(await new Response(stream).text())}
-export async function countryData(id,manifest){const entry=manifest.countries[id],names=entry.packs||[entry.pack];const parts=await Promise.all(names.map(pack=>{if(!packCache.has(pack))packCache.set(pack,readCompressed(`${BASE}packs/${pack}`).catch(error=>{packCache.delete(pack);throw error}));return packCache.get(pack)}));return {type:"FeatureCollection",features:parts.flatMap(part=>part[id]?.features||[])}}
+export async function readCompressed(url,options){const response=await fetch(url,options);if(!response.ok)throw Error(`HTTP ${response.status}`);const stream=response.body.pipeThrough(new DecompressionStream("gzip"));return JSON.parse(await new Response(stream).text())}
+async function countryData(id,manifest){const entry=manifest.countries[id],names=entry.packs||[entry.pack];const parts=await Promise.all(names.map(pack=>{if(!packCache.has(pack))packCache.set(pack,readCompressed(`${BASE}packs/${pack}`).catch(error=>{packCache.delete(pack);throw error}));return packCache.get(pack)}));return {type:"FeatureCollection",features:parts.flatMap(part=>part[id]?.features||[])}}
 const escape=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const style=(selected=false,assigned=false)=>({color:selected?"#fff1c4":assigned?"#e2ba74":"#b2c0bf",weight:selected?2:.8,fillColor:selected?"#e5a84f":assigned?"#b97837":"#91aeb2",fillOpacity:selected?.65:assigned?.43:.2});
 export function mountMaharajaAtlas(map){
