@@ -1,3 +1,4 @@
+import { countryData, readCompressed } from "./atlas.js";
 import { escapeHTML as e } from "./components.js";
 import { maharajapuraLandmarkGallery as gallery } from "./maharajapura-gallery.js";
 
@@ -29,8 +30,7 @@ const views = {
   capital: [[0.88, 103.68], [1.43, 104.43]],
   batam: [[1.047, 103.93], [1.228, 104.16]],
   temasek: [[1.22, 103.60], [1.47, 104.06]],
-  bintan: [[0.88, 104.26], [1.22, 104.66]],
-  islands: [[-0.58, 103.25], [4.03, 108.55]]
+  bintan: [[0.88, 104.26], [1.22, 104.66]]
 };
 
 const places = [
@@ -45,11 +45,11 @@ export function settlementMap() {
     <div class="settlement-map__canvas" aria-label="Map of Maharajapura and the Malaya Islands"></div>
     <div class="settlement-map__controls">
       <select aria-label="Map area">
-        <option value="capital">Malaya Islands Capital Region</option>
+        <option value="cakravala">Malaya Islands Cakravala</option>
+        <option value="capital">Capital Strait</option>
         <option value="batam">Maharajapura &amp; Batam</option>
         <option value="temasek">Temasek</option>
         <option value="bintan">Bintan</option>
-        <option value="islands">All Malaya Islands</option>
       </select>
       <div class="settlement-map__zoom">
         <button type="button" data-map="in" aria-label="Zoom in">+</button>
@@ -91,11 +91,14 @@ export function mountSettlementMap(panel, openGallery) {
     zoomSnap: 0.25
   });
   L.control.attribution({ prefix: false, position: "bottomleft" }).addAttribution(
-    '<a href="./assets/map/global/README.md">Coastlines · UNICEF GeoRepo</a>'
+    '<a href="./assets/map/global/README.md">World ADM2 · UNICEF GeoRepo</a>'
   ).addTo(map);
 
-  const regionalPins = L.layerGroup();
-  const featuredPins = L.layerGroup().addTo(map);
+  const cityPins = L.layerGroup();
+  const featuredPins = L.layerGroup();
+  const regionalPins = L.layerGroup().addTo(map);
+  const islandLabels = L.layerGroup();
+  let cakravalaBounds;
   let activeMarker;
   let activePhoto;
   let defaultMarker;
@@ -106,7 +109,9 @@ export function mountSettlementMap(panel, openGallery) {
     const sidebar = window.matchMedia("(min-width: 821px)").matches
       ? Math.min(canvas.clientWidth * 0.29, 484)
       : 0;
-    map.fitBounds(views[select.value], {
+    const bounds = views[select.value] ?? cakravalaBounds;
+    if (!bounds) return;
+    map.fitBounds(bounds, {
       paddingTopLeft: [24, 24],
       paddingBottomRight: [24 + sidebar, 24],
       animate: false,
@@ -115,9 +120,12 @@ export function mountSettlementMap(panel, openGallery) {
   }
 
   function updatePins() {
-    const showRegional = map.getZoom() >= 11.5 || select.value !== "capital";
-    if (showRegional) regionalPins.addTo(map);
-    else regionalPins.remove();
+    if (map.getZoom() >= 10.5) islandLabels.addTo(map);
+    else islandLabels.remove();
+    if (map.getZoom() >= 10.5 || select.value !== "cakravala") featuredPins.addTo(map);
+    else featuredPins.remove();
+    if (map.getZoom() >= 11.5 || select.value === "batam") cityPins.addTo(map);
+    else cityPins.remove();
   }
 
   function openCard(feature, marker) {
@@ -156,7 +164,7 @@ export function mountSettlementMap(panel, openGallery) {
   shell.querySelector('[data-map="in"]').addEventListener("click", () => map.zoomIn());
   shell.querySelector('[data-map="out"]').addEventListener("click", () => map.zoomOut());
   shell.querySelector('[data-map="reset"]').addEventListener("click", () => {
-    select.value = "capital";
+    select.value = "cakravala";
     if (defaultMarker) openCard(...defaultMarker);
     fitView();
     updatePins();
@@ -164,21 +172,33 @@ export function mountSettlementMap(panel, openGallery) {
   map.on("zoomend", updatePins);
 
   async function loadMap() {
-    const fetchData = async file => {
-      const response = await fetch(`./assets/map/cities/${file}.geojson`, { signal: abort.signal });
-      if (!response.ok) throw new Error(`Unable to load ${file}`);
+    const fetchJSON = async path => {
+      const response = await fetch(path, { signal: abort.signal });
+      if (!response.ok) throw new Error(`Unable to load ${path}`);
       return response.json();
     };
     try {
-      const [coast, pins] = await Promise.all([
-        fetchData("malaya-islands-coast"), fetchData("malaya-islands-landmarks")
+      const [manifest, scope, pins] = await Promise.all([
+        fetchJSON("./assets/map/global/manifest.json"),
+        readCompressed("./assets/map/maharaja/cakravala/Malaya_Islands.json.gz"),
+        fetchJSON("./assets/map/cities/malaya-islands-landmarks.geojson")
       ]);
+      const members = new Set(scope.features.map(feature => feature.properties.id));
+      const countries = [...new Set(scope.features.map(feature => feature.properties.country))];
+      const packs = await Promise.all(countries.map(country => countryData(country, manifest)));
       if (abort.signal.aborted) return;
 
-      L.geoJSON(coast, {
+      const features = packs.flatMap(pack => pack.features)
+        .filter(feature => members.has(feature.properties.id));
+      if (features.length !== members.size) throw new Error("Incomplete Malaya Islands ADM2 coverage");
+
+      const layer = L.geoJSON({ type: "FeatureCollection", features }, {
         interactive: false,
-        style: { stroke: false, fillColor: "#f4dfb3", fillOpacity: 1 }
+        smoothFactor: 0,
+        style: { color: "#a98754", weight: 0.6, opacity: 0.72, fillColor: "#f4dfb3", fillOpacity: 1 }
       }).addTo(map);
+      cakravalaBounds = layer.getBounds();
+      fitView();
 
       places.forEach(([name, coordinates]) => {
         L.marker(coordinates, {
@@ -186,7 +206,7 @@ export function mountSettlementMap(panel, openGallery) {
           interactive: false,
           keyboard: false,
           zIndexOffset: -10000
-        }).addTo(map);
+        }).addTo(islandLabels);
       });
 
       for (const feature of pins.features) {
@@ -194,6 +214,7 @@ export function mountSettlementMap(panel, openGallery) {
         const [longitude, latitude] = feature.geometry.coordinates;
         const details = highlights.get(name);
         const isPalace = name === palace;
+        const inCapitalStrait = L.latLngBounds(views.capital).contains([latitude, longitude]);
         const size = isPalace ? 30 : details ? 14 : 12;
         const marker = L.marker([latitude, longitude], {
           title: name,
@@ -217,13 +238,15 @@ export function mountSettlementMap(panel, openGallery) {
           });
         });
         marker.bindTooltip(e(details?.label ?? name), {
-          permanent: Boolean(details),
+          permanent: isPalace || Boolean(details && inCapitalStrait),
           direction: details?.direction ?? "top",
           offset: details?.offset ?? [0, 0],
           className: "settlement-map__label"
         });
         marker.on("click", () => openCard(feature, marker));
-        marker.addTo(details ? featuredPins : regionalPins);
+        const pinsLayer = isPalace || !inCapitalStrait ? regionalPins
+          : details ? featuredPins : cityPins;
+        marker.addTo(pinsLayer);
         if (isPalace) defaultMarker = [feature, marker];
       }
 
@@ -235,7 +258,7 @@ export function mountSettlementMap(panel, openGallery) {
     }
   }
 
-  fitView();
+  map.setView([2, 105.8], 6);
   loadMap();
 
   return {
