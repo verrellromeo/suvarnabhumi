@@ -1,4 +1,4 @@
-import { countryData, readCompressed } from "./atlas.js";
+import { readCompressed } from "./atlas.js";
 import { escapeHTML as e } from "./components.js";
 import { maharajapuraLandmarkGallery as gallery } from "./maharajapura-gallery.js";
 
@@ -91,7 +91,7 @@ export function mountSettlementMap(panel, openGallery) {
     zoomSnap: 0.25
   });
   L.control.attribution({ prefix: false, position: "bottomleft" }).addAttribution(
-    '<a href="./assets/map/global/README.md">World ADM2 · UNICEF GeoRepo</a>'
+    '<a href="./assets/map/global/README.md">ADM2 · UNICEF GeoRepo</a>'
   ).addTo(map);
 
   const cityPins = L.layerGroup();
@@ -178,24 +178,16 @@ export function mountSettlementMap(panel, openGallery) {
       return response.json();
     };
     try {
-      const [manifest, scope, pins] = await Promise.all([
-        fetchJSON("./assets/map/global/manifest.json"),
-        readCompressed("./assets/map/maharaja/cakravala/Malaya_Islands.json.gz"),
+      const [geometry, pins] = await Promise.all([
+        readCompressed("./assets/map/cities/malaya-islands-adm2-full.geojson.gz", { signal: abort.signal }),
         fetchJSON("./assets/map/cities/malaya-islands-landmarks.geojson")
       ]);
-      const members = new Set(scope.features.map(feature => feature.properties.id));
-      const countries = [...new Set(scope.features.map(feature => feature.properties.country))];
-      const packs = await Promise.all(countries.map(country => countryData(country, manifest)));
       if (abort.signal.aborted) return;
 
-      const features = packs.flatMap(pack => pack.features)
-        .filter(feature => members.has(feature.properties.id));
-      if (features.length !== members.size) throw new Error("Incomplete Malaya Islands ADM2 coverage");
-
-      const layer = L.geoJSON({ type: "FeatureCollection", features }, {
+      const layer = L.geoJSON(geometry, {
         interactive: false,
         smoothFactor: 0,
-        style: { color: "#a98754", weight: 0.6, opacity: 0.72, fillColor: "#f4dfb3", fillOpacity: 1 }
+        style: { stroke: false, fillColor: "#f4dfb3", fillOpacity: 1 }
       }).addTo(map);
       cakravalaBounds = layer.getBounds();
       fitView();

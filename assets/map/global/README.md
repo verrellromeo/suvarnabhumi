@@ -13,4 +13,6 @@ Rebuild from the linked `adm2.geojson` and `adm0.geojson` exports:
 3. Run Mapshaper weighted simplify with `keep-shapes` on ADM0 and each ADM2 partition, outputting `world.geojson` and `<entity>.geojson` here.
 4. Create `manifest.json` with the ADM0 names and counts from `adm2-parts/counts.json`, then run `python tools/pack-global.py`. This repacks the UNICEF base; restore the Maharaja 3% override packs and their manifest entries afterward.
 
+The Maharajapura settlement map uses `../cities/malaya-islands-adm2-full.geojson.gz`, an extract of the 70 Malaya Islands Cakravala members from the same UNICEF ADM2 export. Membership uses the Cakravala feature IDs. The extract retains the original geometry without coordinate rounding or vertex simplification.
+
 Assignments made in the browser are stored in that browser's local storage; **Export selections** downloads a portable JSON copy.
