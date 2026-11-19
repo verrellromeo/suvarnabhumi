@@ -179,7 +179,7 @@ export function mountSettlementMap(panel, openGallery) {
     };
     try {
       const [geometry, pins] = await Promise.all([
-        readCompressed("./assets/map/cities/malaya-islands-adm2-full.geojson.gz", { signal: abort.signal }),
+        readCompressed("./assets/map/cities/malaya-islands-land.geojson.gz", { signal: abort.signal }),
         fetchJSON("./assets/map/cities/malaya-islands-landmarks.geojson")
       ]);
       if (abort.signal.aborted) return;
